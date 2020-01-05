@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.website_companies_install_additions_response import WebsiteCompaniesInstallAdditionsResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.website_companies_install_additions_response import WebsiteCompaniesInstallAdditionsResponse  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestWebsiteCompaniesInstallAdditionsResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestWebsiteCompaniesInstallAdditionsResponse(unittest.TestCase):
     def testWebsiteCompaniesInstallAdditionsResponse(self):
         """Test WebsiteCompaniesInstallAdditionsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.website_companies_install_additions_response.WebsiteCompaniesInstallAdditionsResponse()  # noqa: E501
+        # model = office_guy_api.models.website_companies_install_additions_response.WebsiteCompaniesInstallAdditionsResponse()  # noqa: E501
         pass
 
 

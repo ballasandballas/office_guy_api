@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.billing_general_set_u_pay_credentials_request import BillingGeneralSetUPayCredentialsRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.billing_general_set_u_pay_credentials_request import BillingGeneralSetUPayCredentialsRequest  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestBillingGeneralSetUPayCredentialsRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestBillingGeneralSetUPayCredentialsRequest(unittest.TestCase):
     def testBillingGeneralSetUPayCredentialsRequest(self):
         """Test BillingGeneralSetUPayCredentialsRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.billing_general_set_u_pay_credentials_request.BillingGeneralSetUPayCredentialsRequest()  # noqa: E501
+        # model = office_guy_api.models.billing_general_set_u_pay_credentials_request.BillingGeneralSetUPayCredentialsRequest()  # noqa: E501
         pass
 
 

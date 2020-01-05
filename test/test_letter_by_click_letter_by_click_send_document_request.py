@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.letter_by_click_letter_by_click_send_document_request import LetterByClickLetterByClickSendDocumentRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.letter_by_click_letter_by_click_send_document_request import LetterByClickLetterByClickSendDocumentRequest  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestLetterByClickLetterByClickSendDocumentRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestLetterByClickLetterByClickSendDocumentRequest(unittest.TestCase):
     def testLetterByClickLetterByClickSendDocumentRequest(self):
         """Test LetterByClickLetterByClickSendDocumentRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.letter_by_click_letter_by_click_send_document_request.LetterByClickLetterByClickSendDocumentRequest()  # noqa: E501
+        # model = office_guy_api.models.letter_by_click_letter_by_click_send_document_request.LetterByClickLetterByClickSendDocumentRequest()  # noqa: E501
         pass
 
 

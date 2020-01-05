@@ -22,13 +22,13 @@ Add expense
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingDocumentsApi()
-request = swagger_client.AccountingDocumentsAddExpenseRequest() # AccountingDocumentsAddExpenseRequest |  (optional)
+api_instance = office_guy_api.AccountingDocumentsApi()
+request = office_guy_api.AccountingDocumentsAddExpenseRequest() # AccountingDocumentsAddExpenseRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -72,13 +72,13 @@ Please note cancelling documents is allowed within the same calendar day of the 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingDocumentsApi()
-request = swagger_client.AccountingDocumentsCancelRequest() # AccountingDocumentsCancelRequest |  (optional)
+api_instance = office_guy_api.AccountingDocumentsApi()
+request = office_guy_api.AccountingDocumentsCancelRequest() # AccountingDocumentsCancelRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -122,13 +122,13 @@ Creates an invoice, receipt, donation receipt, price quotation or any other acco
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingDocumentsApi()
-request = swagger_client.AccountingDocumentsCreateRequest() # AccountingDocumentsCreateRequest |  (optional)
+api_instance = office_guy_api.AccountingDocumentsApi()
+request = office_guy_api.AccountingDocumentsCreateRequest() # AccountingDocumentsCreateRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -172,13 +172,13 @@ Documents can be located either using DocumentID, or a combination of DocumentTy
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingDocumentsApi()
-request = swagger_client.AccountingDocumentsGetDetailsRequest() # AccountingDocumentsGetDetailsRequest |  (optional)
+api_instance = office_guy_api.AccountingDocumentsApi()
+request = office_guy_api.AccountingDocumentsGetDetailsRequest() # AccountingDocumentsGetDetailsRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -222,13 +222,13 @@ Documents can be located either using DocumentID, or a combination of DocumentTy
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingDocumentsApi()
-request = swagger_client.AccountingDocumentsGetPDFRequest() # AccountingDocumentsGetPDFRequest |  (optional)
+api_instance = office_guy_api.AccountingDocumentsApi()
+request = office_guy_api.AccountingDocumentsGetPDFRequest() # AccountingDocumentsGetPDFRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -269,13 +269,13 @@ Move document to books (Finalize a draft document).
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingDocumentsApi()
-request = swagger_client.AccountingDocumentsMoveToBooksRequest() # AccountingDocumentsMoveToBooksRequest |  (optional)
+api_instance = office_guy_api.AccountingDocumentsApi()
+request = office_guy_api.AccountingDocumentsMoveToBooksRequest() # AccountingDocumentsMoveToBooksRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -319,13 +319,13 @@ Documents can be located either using DocumentID (EntityID), or a combination of
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingDocumentsApi()
-request = swagger_client.AccountingDocumentsSendRequest() # AccountingDocumentsSendRequest |  (optional)
+api_instance = office_guy_api.AccountingDocumentsApi()
+request = office_guy_api.AccountingDocumentsSendRequest() # AccountingDocumentsSendRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

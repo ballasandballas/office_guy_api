@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.crm_data_get_entities_html_request import CRMDataGetEntitiesHTMLRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.crm_data_get_entities_html_request import CRMDataGetEntitiesHTMLRequest  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestCRMDataGetEntitiesHTMLRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCRMDataGetEntitiesHTMLRequest(unittest.TestCase):
     def testCRMDataGetEntitiesHTMLRequest(self):
         """Test CRMDataGetEntitiesHTMLRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.crm_data_get_entities_html_request.CRMDataGetEntitiesHTMLRequest()  # noqa: E501
+        # model = office_guy_api.models.crm_data_get_entities_html_request.CRMDataGetEntitiesHTMLRequest()  # noqa: E501
         pass
 
 

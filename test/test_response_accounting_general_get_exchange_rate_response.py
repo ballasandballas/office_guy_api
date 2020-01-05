@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_accounting_general_get_exchange_rate_response import ResponseAccountingGeneralGetExchangeRateResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.response_accounting_general_get_exchange_rate_response import ResponseAccountingGeneralGetExchangeRateResponse  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestResponseAccountingGeneralGetExchangeRateResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestResponseAccountingGeneralGetExchangeRateResponse(unittest.TestCase):
     def testResponseAccountingGeneralGetExchangeRateResponse(self):
         """Test ResponseAccountingGeneralGetExchangeRateResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_accounting_general_get_exchange_rate_response.ResponseAccountingGeneralGetExchangeRateResponse()  # noqa: E501
+        # model = office_guy_api.models.response_accounting_general_get_exchange_rate_response.ResponseAccountingGeneralGetExchangeRateResponse()  # noqa: E501
         pass
 
 

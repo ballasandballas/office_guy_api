@@ -16,13 +16,13 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OutgoingFaxesFaxApi()
-request = swagger_client.FaxFaxSendRequest() # FaxFaxSendRequest |  (optional)
+api_instance = office_guy_api.OutgoingFaxesFaxApi()
+request = office_guy_api.FaxFaxSendRequest() # FaxFaxSendRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.website_users_login_redirect_request import WebsiteUsersLoginRedirectRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.website_users_login_redirect_request import WebsiteUsersLoginRedirectRequest  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestWebsiteUsersLoginRedirectRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestWebsiteUsersLoginRedirectRequest(unittest.TestCase):
     def testWebsiteUsersLoginRedirectRequest(self):
         """Test WebsiteUsersLoginRedirectRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.website_users_login_redirect_request.WebsiteUsersLoginRedirectRequest()  # noqa: E501
+        # model = office_guy_api.models.website_users_login_redirect_request.WebsiteUsersLoginRedirectRequest()  # noqa: E501
         pass
 
 

@@ -18,13 +18,13 @@ Get payment details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsPaymentMethodsApi()
-request = swagger_client.BillingPaymentMethodsGetForCustomerRequest() # BillingPaymentMethodsGetForCustomerRequest |  (optional)
+api_instance = office_guy_api.PaymentsPaymentMethodsApi()
+request = office_guy_api.BillingPaymentMethodsGetForCustomerRequest() # BillingPaymentMethodsGetForCustomerRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -66,13 +66,13 @@ Remove payment details from existing customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsPaymentMethodsApi()
-request = swagger_client.BillingPaymentMethodsRemoveRequest() # BillingPaymentMethodsRemoveRequest |  (optional)
+api_instance = office_guy_api.PaymentsPaymentMethodsApi()
+request = office_guy_api.BillingPaymentMethodsRemoveRequest() # BillingPaymentMethodsRemoveRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -114,13 +114,13 @@ Set payment details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsPaymentMethodsApi()
-request = swagger_client.BillingPaymentMethodsSetForCustomerRequest() # BillingPaymentMethodsSetForCustomerRequest |  (optional)
+api_instance = office_guy_api.PaymentsPaymentMethodsApi()
+request = office_guy_api.BillingPaymentMethodsSetForCustomerRequest() # BillingPaymentMethodsSetForCustomerRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

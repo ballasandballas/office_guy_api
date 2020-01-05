@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.website__permissions_api import WebsitePermissionsApi  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.api.website__permissions_api import WebsitePermissionsApi  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestWebsitePermissionsApi(unittest.TestCase):
     """WebsitePermissionsApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.website__permissions_api.WebsitePermissionsApi()  # noqa: E501
+        self.api = office_guy_api.api.website__permissions_api.WebsitePermissionsApi()  # noqa: E501
 
     def tearDown(self):
         pass

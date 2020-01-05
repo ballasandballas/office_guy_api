@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.email_subscriptions_mailing_lists_add_response import EmailSubscriptionsMailingListsAddResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.email_subscriptions_mailing_lists_add_response import EmailSubscriptionsMailingListsAddResponse  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestEmailSubscriptionsMailingListsAddResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestEmailSubscriptionsMailingListsAddResponse(unittest.TestCase):
     def testEmailSubscriptionsMailingListsAddResponse(self):
         """Test EmailSubscriptionsMailingListsAddResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.email_subscriptions_mailing_lists_add_response.EmailSubscriptionsMailingListsAddResponse()  # noqa: E501
+        # model = office_guy_api.models.email_subscriptions_mailing_lists_add_response.EmailSubscriptionsMailingListsAddResponse()  # noqa: E501
         pass
 
 

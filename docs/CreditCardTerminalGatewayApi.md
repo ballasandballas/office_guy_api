@@ -19,13 +19,13 @@ Begin redirect for transaction
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalGatewayApi()
-request = swagger_client.CreditGuyGatewayBeginRedirectRequest() # CreditGuyGatewayBeginRedirectRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalGatewayApi()
+request = office_guy_api.CreditGuyGatewayBeginRedirectRequest() # CreditGuyGatewayBeginRedirectRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -67,13 +67,13 @@ Get reference numbers for existing transactions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalGatewayApi()
-request = swagger_client.CreditGuyGatewayGetReferenceNumbersRequest() # CreditGuyGatewayGetReferenceNumbersRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalGatewayApi()
+request = office_guy_api.CreditGuyGatewayGetReferenceNumbersRequest() # CreditGuyGatewayGetReferenceNumbersRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -115,13 +115,13 @@ Get existing transaction details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalGatewayApi()
-request = swagger_client.CreditGuyGatewayGetTransactionRequest() # CreditGuyGatewayGetTransactionRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalGatewayApi()
+request = office_guy_api.CreditGuyGatewayGetTransactionRequest() # CreditGuyGatewayGetTransactionRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -165,13 +165,13 @@ This method should be used in rare occasions.  For common use scenarios, refer t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalGatewayApi()
-request = swagger_client.CreditGuyGatewayTransactionRequest() # CreditGuyGatewayTransactionRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalGatewayApi()
+request = office_guy_api.CreditGuyGatewayTransactionRequest() # CreditGuyGatewayTransactionRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

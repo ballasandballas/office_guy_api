@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.accounting__general_api import AccountingGeneralApi  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.api.accounting__general_api import AccountingGeneralApi  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestAccountingGeneralApi(unittest.TestCase):
     """AccountingGeneralApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.accounting__general_api.AccountingGeneralApi()  # noqa: E501
+        self.api = office_guy_api.api.accounting__general_api.AccountingGeneralApi()  # noqa: E501
 
     def tearDown(self):
         pass

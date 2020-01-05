@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.crm_schema_get_folder_request import CRMSchemaGetFolderRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.crm_schema_get_folder_request import CRMSchemaGetFolderRequest  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestCRMSchemaGetFolderRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCRMSchemaGetFolderRequest(unittest.TestCase):
     def testCRMSchemaGetFolderRequest(self):
         """Test CRMSchemaGetFolderRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.crm_schema_get_folder_request.CRMSchemaGetFolderRequest()  # noqa: E501
+        # model = office_guy_api.models.crm_schema_get_folder_request.CRMSchemaGetFolderRequest()  # noqa: E501
         pass
 
 

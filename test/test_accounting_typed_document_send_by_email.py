@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accounting_typed_document_send_by_email import AccountingTypedDocumentSendByEmail  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.accounting_typed_document_send_by_email import AccountingTypedDocumentSendByEmail  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestAccountingTypedDocumentSendByEmail(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestAccountingTypedDocumentSendByEmail(unittest.TestCase):
     def testAccountingTypedDocumentSendByEmail(self):
         """Test AccountingTypedDocumentSendByEmail"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accounting_typed_document_send_by_email.AccountingTypedDocumentSendByEmail()  # noqa: E501
+        # model = office_guy_api.models.accounting_typed_document_send_by_email.AccountingTypedDocumentSendByEmail()  # noqa: E501
         pass
 
 

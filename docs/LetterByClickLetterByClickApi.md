@@ -19,13 +19,13 @@ Contact us before using this API, as it's currently experimental.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.LetterByClickLetterByClickApi()
-request = swagger_client.LetterByClickLetterByClickGetTrackingCodeRequest() # LetterByClickLetterByClickGetTrackingCodeRequest |  (optional)
+api_instance = office_guy_api.LetterByClickLetterByClickApi()
+request = office_guy_api.LetterByClickLetterByClickGetTrackingCodeRequest() # LetterByClickLetterByClickGetTrackingCodeRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -69,13 +69,13 @@ Contact us before using this API, as it's currently experimental.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.LetterByClickLetterByClickApi()
-request = swagger_client.LetterByClickLetterByClickSendDocumentRequest() # LetterByClickLetterByClickSendDocumentRequest |  (optional)
+api_instance = office_guy_api.LetterByClickLetterByClickApi()
+request = office_guy_api.LetterByClickLetterByClickSendDocumentRequest() # LetterByClickLetterByClickSendDocumentRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

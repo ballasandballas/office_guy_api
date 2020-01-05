@@ -18,13 +18,13 @@ List verified sender numbers
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SMSSubscriptionsSMSApi()
-request = swagger_client.SMSSMSListSendersRequest() # SMSSMSListSendersRequest |  (optional)
+api_instance = office_guy_api.SMSSubscriptionsSMSApi()
+request = office_guy_api.SMSSMSListSendersRequest() # SMSSMSListSendersRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -68,13 +68,13 @@ When possible, SendMultiple should be used
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SMSSubscriptionsSMSApi()
-request = swagger_client.SMSSMSSendRequest() # SMSSMSSendRequest |  (optional)
+api_instance = office_guy_api.SMSSubscriptionsSMSApi()
+request = office_guy_api.SMSSMSSendRequest() # SMSSMSSendRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -116,13 +116,13 @@ Sends multiple SMS messages
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SMSSubscriptionsSMSApi()
-request = swagger_client.SMSSMSSendMultipleRequest() # SMSSMSSendMultipleRequest |  (optional)
+api_instance = office_guy_api.SMSSubscriptionsSMSApi()
+request = office_guy_api.SMSSMSSendMultipleRequest() # SMSSMSSendMultipleRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

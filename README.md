@@ -23,7 +23,7 @@ pip install git+https://github.com//.git
 
 Then import the package:
 ```python
-import swagger_client 
+import office_guy_api 
 ```
 
 ### Setuptools
@@ -37,7 +37,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import swagger_client
+import office_guy_api
 ```
 
 ## Getting Started
@@ -47,13 +47,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingCustomersApi(swagger_client.ApiClient(configuration))
-request = swagger_client.AccountingCustomersCreateRequest() # AccountingCustomersCreateRequest |  (optional)
+api_instance = office_guy_api.AccountingCustomersApi(office_guy_api.ApiClient(configuration))
+request = office_guy_api.AccountingCustomersCreateRequest() # AccountingCustomersCreateRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

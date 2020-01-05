@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_system_int64 import ResponseSystemInt64  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.response_system_int64 import ResponseSystemInt64  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestResponseSystemInt64(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestResponseSystemInt64(unittest.TestCase):
     def testResponseSystemInt64(self):
         """Test ResponseSystemInt64"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_system_int64.ResponseSystemInt64()  # noqa: E501
+        # model = office_guy_api.models.response_system_int64.ResponseSystemInt64()  # noqa: E501
         pass
 
 

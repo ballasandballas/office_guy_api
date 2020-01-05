@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.response_accounting_documents_move_to_books_response import ResponseAccountingDocumentsMoveToBooksResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.response_accounting_documents_move_to_books_response import ResponseAccountingDocumentsMoveToBooksResponse  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestResponseAccountingDocumentsMoveToBooksResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestResponseAccountingDocumentsMoveToBooksResponse(unittest.TestCase):
     def testResponseAccountingDocumentsMoveToBooksResponse(self):
         """Test ResponseAccountingDocumentsMoveToBooksResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.response_accounting_documents_move_to_books_response.ResponseAccountingDocumentsMoveToBooksResponse()  # noqa: E501
+        # model = office_guy_api.models.response_accounting_documents_move_to_books_response.ResponseAccountingDocumentsMoveToBooksResponse()  # noqa: E501
         pass
 
 

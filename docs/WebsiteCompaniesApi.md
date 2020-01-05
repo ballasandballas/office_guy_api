@@ -23,13 +23,13 @@ Created organization payment method, will be set to the calling organization pay
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsiteCompaniesApi()
-request = swagger_client.WebsiteCompaniesCreateRequest() # WebsiteCompaniesCreateRequest |  (optional)
+api_instance = office_guy_api.WebsiteCompaniesApi()
+request = office_guy_api.WebsiteCompaniesCreateRequest() # WebsiteCompaniesCreateRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -73,13 +73,13 @@ This method can be used to make sure the correct organization ID is used, when m
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsiteCompaniesApi()
-request = swagger_client.WebsiteCompaniesGetDetailsRequest() # WebsiteCompaniesGetDetailsRequest |  (optional)
+api_instance = office_guy_api.WebsiteCompaniesApi()
+request = office_guy_api.WebsiteCompaniesGetDetailsRequest() # WebsiteCompaniesGetDetailsRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -123,13 +123,13 @@ Please note this method requires an active payment method.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsiteCompaniesApi()
-request = swagger_client.WebsiteCompaniesInstallAdditionsRequest() # WebsiteCompaniesInstallAdditionsRequest |  (optional)
+api_instance = office_guy_api.WebsiteCompaniesApi()
+request = office_guy_api.WebsiteCompaniesInstallAdditionsRequest() # WebsiteCompaniesInstallAdditionsRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -173,13 +173,13 @@ Please note this method requires an active payment method.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsiteCompaniesApi()
-request = swagger_client.WebsiteCompaniesInstallApplicationsRequest() # WebsiteCompaniesInstallApplicationsRequest |  (optional)
+api_instance = office_guy_api.WebsiteCompaniesApi()
+request = office_guy_api.WebsiteCompaniesInstallApplicationsRequest() # WebsiteCompaniesInstallApplicationsRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -221,13 +221,13 @@ Removes additions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsiteCompaniesApi()
-request = swagger_client.WebsiteCompaniesRemoveAdditionsRequest() # WebsiteCompaniesRemoveAdditionsRequest |  (optional)
+api_instance = office_guy_api.WebsiteCompaniesApi()
+request = office_guy_api.WebsiteCompaniesRemoveAdditionsRequest() # WebsiteCompaniesRemoveAdditionsRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -269,13 +269,13 @@ Update organization details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsiteCompaniesApi()
-request = swagger_client.WebsiteCompaniesUpdateRequest() # WebsiteCompaniesUpdateRequest |  (optional)
+api_instance = office_guy_api.WebsiteCompaniesApi()
+request = office_guy_api.WebsiteCompaniesUpdateRequest() # WebsiteCompaniesUpdateRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

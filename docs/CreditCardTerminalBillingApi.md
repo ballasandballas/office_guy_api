@@ -18,13 +18,13 @@ Get billing process status
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalBillingApi()
-request = swagger_client.CreditGuyBillingGetStatusRequest() # CreditGuyBillingGetStatusRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalBillingApi()
+request = office_guy_api.CreditGuyBillingGetStatusRequest() # CreditGuyBillingGetStatusRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -66,13 +66,13 @@ Load billing transactions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalBillingApi()
-request = swagger_client.CreditGuyBillingLoadRequest() # CreditGuyBillingLoadRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalBillingApi()
+request = office_guy_api.CreditGuyBillingLoadRequest() # CreditGuyBillingLoadRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -116,13 +116,13 @@ Please note, once process has started, it can't be stopped, and no additional tr
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalBillingApi()
-request = swagger_client.CreditGuyBillingProcessRequest() # CreditGuyBillingProcessRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalBillingApi()
+request = office_guy_api.CreditGuyBillingProcessRequest() # CreditGuyBillingProcessRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

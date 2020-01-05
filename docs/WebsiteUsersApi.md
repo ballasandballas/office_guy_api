@@ -17,13 +17,13 @@ Create user and grant permissions to the current organization
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsiteUsersApi()
-request = swagger_client.WebsiteUsersCreateRequest() # WebsiteUsersCreateRequest |  (optional)
+api_instance = office_guy_api.WebsiteUsersApi()
+request = office_guy_api.WebsiteUsersCreateRequest() # WebsiteUsersCreateRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -67,13 +67,13 @@ Please note, this doesn't validate the user credentials, and will allow creating
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsiteUsersApi()
-request = swagger_client.WebsiteUsersLoginRedirectRequest() # WebsiteUsersLoginRedirectRequest |  (optional)
+api_instance = office_guy_api.WebsiteUsersApi()
+request = office_guy_api.WebsiteUsersLoginRedirectRequest() # WebsiteUsersLoginRedirectRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

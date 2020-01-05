@@ -24,13 +24,13 @@ Archive entity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataArchiveEntityRequest() # CRMDataArchiveEntityRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataArchiveEntityRequest() # CRMDataArchiveEntityRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -72,13 +72,13 @@ Count entity usage
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataCountEntityUsageRequest() # CRMDataCountEntityUsageRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataCountEntityUsageRequest() # CRMDataCountEntityUsageRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -120,13 +120,13 @@ Create entity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataCreateEntityRequest() # CRMDataCreateEntityRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataCreateEntityRequest() # CRMDataCreateEntityRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -168,13 +168,13 @@ Delete entity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataDeleteEntityRequest() # CRMDataDeleteEntityRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataDeleteEntityRequest() # CRMDataDeleteEntityRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -216,13 +216,13 @@ Get entities HTML contents for print
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataGetEntitiesHTMLRequest() # CRMDataGetEntitiesHTMLRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataGetEntitiesHTMLRequest() # CRMDataGetEntitiesHTMLRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -263,13 +263,13 @@ Get entity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataGetEntityRequest() # CRMDataGetEntityRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataGetEntityRequest() # CRMDataGetEntityRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -311,13 +311,13 @@ Get entity HTML contents for print
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataGetEntityPrintHTMLRequest() # CRMDataGetEntityPrintHTMLRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataGetEntityPrintHTMLRequest() # CRMDataGetEntityPrintHTMLRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -358,13 +358,13 @@ List entities
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataListEntitiesRequest() # CRMDataListEntitiesRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataListEntitiesRequest() # CRMDataListEntitiesRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -406,13 +406,13 @@ Update entity
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CRMDataApi()
-request = swagger_client.CRMDataUpdateEntityRequest() # CRMDataUpdateEntityRequest |  (optional)
+api_instance = office_guy_api.CRMDataApi()
+request = office_guy_api.CRMDataUpdateEntityRequest() # CRMDataUpdateEntityRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

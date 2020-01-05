@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.billing_payment_methods_set_for_customer_response import BillingPaymentMethodsSetForCustomerResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.billing_payment_methods_set_for_customer_response import BillingPaymentMethodsSetForCustomerResponse  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestBillingPaymentMethodsSetForCustomerResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestBillingPaymentMethodsSetForCustomerResponse(unittest.TestCase):
     def testBillingPaymentMethodsSetForCustomerResponse(self):
         """Test BillingPaymentMethodsSetForCustomerResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.billing_payment_methods_set_for_customer_response.BillingPaymentMethodsSetForCustomerResponse()  # noqa: E501
+        # model = office_guy_api.models.billing_payment_methods_set_for_customer_response.BillingPaymentMethodsSetForCustomerResponse()  # noqa: E501
         pass
 
 

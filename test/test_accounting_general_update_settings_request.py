@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accounting_general_update_settings_request import AccountingGeneralUpdateSettingsRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.accounting_general_update_settings_request import AccountingGeneralUpdateSettingsRequest  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestAccountingGeneralUpdateSettingsRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestAccountingGeneralUpdateSettingsRequest(unittest.TestCase):
     def testAccountingGeneralUpdateSettingsRequest(self):
         """Test AccountingGeneralUpdateSettingsRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accounting_general_update_settings_request.AccountingGeneralUpdateSettingsRequest()  # noqa: E501
+        # model = office_guy_api.models.accounting_general_update_settings_request.AccountingGeneralUpdateSettingsRequest()  # noqa: E501
         pass
 
 

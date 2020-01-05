@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.customer_service_tickets_create_request import CustomerServiceTicketsCreateRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.customer_service_tickets_create_request import CustomerServiceTicketsCreateRequest  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestCustomerServiceTicketsCreateRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCustomerServiceTicketsCreateRequest(unittest.TestCase):
     def testCustomerServiceTicketsCreateRequest(self):
         """Test CustomerServiceTicketsCreateRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.customer_service_tickets_create_request.CustomerServiceTicketsCreateRequest()  # noqa: E501
+        # model = office_guy_api.models.customer_service_tickets_create_request.CustomerServiceTicketsCreateRequest()  # noqa: E501
         pass
 
 

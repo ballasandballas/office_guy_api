@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.accounting_general_verify_bank_account_response import AccountingGeneralVerifyBankAccountResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.accounting_general_verify_bank_account_response import AccountingGeneralVerifyBankAccountResponse  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestAccountingGeneralVerifyBankAccountResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestAccountingGeneralVerifyBankAccountResponse(unittest.TestCase):
     def testAccountingGeneralVerifyBankAccountResponse(self):
         """Test AccountingGeneralVerifyBankAccountResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.accounting_general_verify_bank_account_response.AccountingGeneralVerifyBankAccountResponse()  # noqa: E501
+        # model = office_guy_api.models.accounting_general_verify_bank_account_response.AccountingGeneralVerifyBankAccountResponse()  # noqa: E501
         pass
 
 

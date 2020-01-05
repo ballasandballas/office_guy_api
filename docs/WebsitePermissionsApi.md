@@ -17,13 +17,13 @@ Remove user permission
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsitePermissionsApi()
-request = swagger_client.WebsitePermissionsRemoveRequest() # WebsitePermissionsRemoveRequest |  (optional)
+api_instance = office_guy_api.WebsitePermissionsApi()
+request = office_guy_api.WebsitePermissionsRemoveRequest() # WebsitePermissionsRemoveRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -65,13 +65,13 @@ Grant user permission
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebsitePermissionsApi()
-request = swagger_client.WebsitePermissionsSetRequest() # WebsitePermissionsSetRequest |  (optional)
+api_instance = office_guy_api.WebsitePermissionsApi()
+request = office_guy_api.WebsitePermissionsSetRequest() # WebsitePermissionsSetRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

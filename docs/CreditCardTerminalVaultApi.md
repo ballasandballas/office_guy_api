@@ -18,13 +18,13 @@ Tokenize card (card number-&gt;token)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalVaultApi()
-request = swagger_client.CreditGuyVaultTokenizeRequest() # CreditGuyVaultTokenizeRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalVaultApi()
+request = office_guy_api.CreditGuyVaultTokenizeRequest() # CreditGuyVaultTokenizeRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -68,12 +68,12 @@ Used primarily by the Payments JavaScript API.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalVaultApi()
+api_instance = office_guy_api.CreditCardTerminalVaultApi()
 card_number = 'card_number_example' # str | Full card number to tokenize
 expiration_month = 56 # int | Card expiration month (1-12).
 expiration_year = 56 # int | Card expiration year (4 digits).
@@ -132,13 +132,13 @@ Used primarily by the Payments JavaScript API.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditCardTerminalVaultApi()
-request = swagger_client.CreditGuyVaultTokenizeSingleUseRequest() # CreditGuyVaultTokenizeSingleUseRequest |  (optional)
+api_instance = office_guy_api.CreditCardTerminalVaultApi()
+request = office_guy_api.CreditGuyVaultTokenizeSingleUseRequest() # CreditGuyVaultTokenizeSingleUseRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

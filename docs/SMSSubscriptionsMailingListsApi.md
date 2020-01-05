@@ -17,13 +17,13 @@ Add recipient to a mailing list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SMSSubscriptionsMailingListsApi()
-request = swagger_client.SMSMailingListsAddRequest() # SMSMailingListsAddRequest |  (optional)
+api_instance = office_guy_api.SMSSubscriptionsMailingListsApi()
+request = office_guy_api.SMSMailingListsAddRequest() # SMSMailingListsAddRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -65,13 +65,13 @@ List mailing lists
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SMSSubscriptionsMailingListsApi()
-request = swagger_client.SMSMailingListsListRequest() # SMSMailingListsListRequest |  (optional)
+api_instance = office_guy_api.SMSSubscriptionsMailingListsApi()
+request = office_guy_api.SMSMailingListsListRequest() # SMSMailingListsListRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

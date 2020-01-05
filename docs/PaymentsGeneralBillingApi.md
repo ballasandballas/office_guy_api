@@ -19,13 +19,13 @@ Please note all parameters set on the request, are automatically requested from 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsGeneralBillingApi()
-request = swagger_client.BillingGeneralOpenUPayTerminalRequest() # BillingGeneralOpenUPayTerminalRequest |  (optional)
+api_instance = office_guy_api.PaymentsGeneralBillingApi()
+request = office_guy_api.BillingGeneralOpenUPayTerminalRequest() # BillingGeneralOpenUPayTerminalRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -69,13 +69,13 @@ Please note when using existing UPay credentials, customer terms will remain as 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsGeneralBillingApi()
-request = swagger_client.BillingGeneralSetUPayCredentialsRequest() # BillingGeneralSetUPayCredentialsRequest |  (optional)
+api_instance = office_guy_api.PaymentsGeneralBillingApi()
+request = office_guy_api.BillingGeneralSetUPayCredentialsRequest() # BillingGeneralSetUPayCredentialsRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

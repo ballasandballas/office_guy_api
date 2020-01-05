@@ -17,13 +17,13 @@ Subscribe a trigger
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersTriggersApi()
-request = swagger_client.TriggersTriggersSubscribeRequest() # TriggersTriggersSubscribeRequest |  (optional)
+api_instance = office_guy_api.TriggersTriggersApi()
+request = office_guy_api.TriggersTriggersSubscribeRequest() # TriggersTriggersSubscribeRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -65,13 +65,13 @@ Unsubscribe a trigger
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TriggersTriggersApi()
-request = swagger_client.TriggersTriggersUnsubscribeRequest() # TriggersTriggersUnsubscribeRequest |  (optional)
+api_instance = office_guy_api.TriggersTriggersApi()
+request = office_guy_api.TriggersTriggersUnsubscribeRequest() # TriggersTriggersUnsubscribeRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

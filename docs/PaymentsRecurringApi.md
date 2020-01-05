@@ -20,13 +20,13 @@ Cancel customer item
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsRecurringApi()
-request = swagger_client.BillingRecurringCancelRequest() # BillingRecurringCancelRequest |  (optional)
+api_instance = office_guy_api.PaymentsRecurringApi()
+request = office_guy_api.BillingRecurringCancelRequest() # BillingRecurringCancelRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -68,13 +68,13 @@ Charge customer and create recurring payment
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsRecurringApi()
-request = swagger_client.BillingRecurringChargeRequest() # BillingRecurringChargeRequest |  (optional)
+api_instance = office_guy_api.PaymentsRecurringApi()
+request = office_guy_api.BillingRecurringChargeRequest() # BillingRecurringChargeRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -116,13 +116,13 @@ List customer recurring items
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsRecurringApi()
-request = swagger_client.BillingRecurringListForCustomerRequest() # BillingRecurringListForCustomerRequest |  (optional)
+api_instance = office_guy_api.PaymentsRecurringApi()
+request = office_guy_api.BillingRecurringListForCustomerRequest() # BillingRecurringListForCustomerRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -164,13 +164,13 @@ Update customer recurring item
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsRecurringApi()
-request = swagger_client.BillingRecurringUpdateRequest() # BillingRecurringUpdateRequest |  (optional)
+api_instance = office_guy_api.PaymentsRecurringApi()
+request = office_guy_api.BillingRecurringUpdateRequest() # BillingRecurringUpdateRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -212,13 +212,13 @@ Update recurring billing application settings
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsRecurringApi()
-request = swagger_client.BillingRecurringUpdateSettingsRequest() # BillingRecurringUpdateSettingsRequest |  (optional)
+api_instance = office_guy_api.PaymentsRecurringApi()
+request = office_guy_api.BillingRecurringUpdateSettingsRequest() # BillingRecurringUpdateSettingsRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

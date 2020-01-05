@@ -20,13 +20,13 @@ Get foreign currency exchange rate
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingGeneralApi()
-request = swagger_client.AccountingGeneralGetExchangeRateRequest() # AccountingGeneralGetExchangeRateRequest |  (optional)
+api_instance = office_guy_api.AccountingGeneralApi()
+request = office_guy_api.AccountingGeneralGetExchangeRateRequest() # AccountingGeneralGetExchangeRateRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -68,13 +68,13 @@ Get VAT rate by date
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingGeneralApi()
-request = swagger_client.AccountingGeneralGetVATRateRequest() # AccountingGeneralGetVATRateRequest |  (optional)
+api_instance = office_guy_api.AccountingGeneralApi()
+request = office_guy_api.AccountingGeneralGetVATRateRequest() # AccountingGeneralGetVATRateRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -116,13 +116,13 @@ Sets the next document number for a document type.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingGeneralApi()
-request = swagger_client.AccountingGeneralSetNextDocumentNumberRequest() # AccountingGeneralSetNextDocumentNumberRequest |  (optional)
+api_instance = office_guy_api.AccountingGeneralApi()
+request = office_guy_api.AccountingGeneralSetNextDocumentNumberRequest() # AccountingGeneralSetNextDocumentNumberRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -164,13 +164,13 @@ Update accounting application settings
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingGeneralApi()
-request = swagger_client.AccountingGeneralUpdateSettingsRequest() # AccountingGeneralUpdateSettingsRequest |  (optional)
+api_instance = office_guy_api.AccountingGeneralApi()
+request = office_guy_api.AccountingGeneralUpdateSettingsRequest() # AccountingGeneralUpdateSettingsRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -212,13 +212,13 @@ Verify bank account details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountingGeneralApi()
-request = swagger_client.AccountingGeneralVerifyBankAccountRequest() # AccountingGeneralVerifyBankAccountRequest |  (optional)
+api_instance = office_guy_api.AccountingGeneralApi()
+request = office_guy_api.AccountingGeneralVerifyBankAccountRequest() # AccountingGeneralVerifyBankAccountRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

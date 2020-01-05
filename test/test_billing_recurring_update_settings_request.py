@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.billing_recurring_update_settings_request import BillingRecurringUpdateSettingsRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.models.billing_recurring_update_settings_request import BillingRecurringUpdateSettingsRequest  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestBillingRecurringUpdateSettingsRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestBillingRecurringUpdateSettingsRequest(unittest.TestCase):
     def testBillingRecurringUpdateSettingsRequest(self):
         """Test BillingRecurringUpdateSettingsRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.billing_recurring_update_settings_request.BillingRecurringUpdateSettingsRequest()  # noqa: E501
+        # model = office_guy_api.models.billing_recurring_update_settings_request.BillingRecurringUpdateSettingsRequest()  # noqa: E501
         pass
 
 

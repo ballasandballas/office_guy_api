@@ -19,13 +19,13 @@ Begin redirect for transaction
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsPaymentsApi()
-request = swagger_client.BillingPaymentsBeginRedirectRequest() # BillingPaymentsBeginRedirectRequest |  (optional)
+api_instance = office_guy_api.PaymentsPaymentsApi()
+request = office_guy_api.BillingPaymentsBeginRedirectRequest() # BillingPaymentsBeginRedirectRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -67,13 +67,13 @@ Charge customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsPaymentsApi()
-request = swagger_client.BillingPaymentsChargeRequest() # BillingPaymentsChargeRequest |  (optional)
+api_instance = office_guy_api.PaymentsPaymentsApi()
+request = office_guy_api.BillingPaymentsChargeRequest() # BillingPaymentsChargeRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -117,13 +117,13 @@ Remarks goes here
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsPaymentsApi()
-request = swagger_client.BillingPaymentsGetRequest() # BillingPaymentsGetRequest |  (optional)
+api_instance = office_guy_api.PaymentsPaymentsApi()
+request = office_guy_api.BillingPaymentsGetRequest() # BillingPaymentsGetRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
@@ -165,13 +165,13 @@ List payments
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentsPaymentsApi()
-request = swagger_client.BillingPaymentsListRequest() # BillingPaymentsListRequest |  (optional)
+api_instance = office_guy_api.PaymentsPaymentsApi()
+request = office_guy_api.BillingPaymentsListRequest() # BillingPaymentsListRequest |  (optional)
 content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:

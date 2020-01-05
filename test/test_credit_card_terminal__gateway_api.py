@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.credit_card_terminal__gateway_api import CreditCardTerminalGatewayApi  # noqa: E501
-from swagger_client.rest import ApiException
+import office_guy_api
+from office_guy_api.api.credit_card_terminal__gateway_api import CreditCardTerminalGatewayApi  # noqa: E501
+from office_guy_api.rest import ApiException
 
 
 class TestCreditCardTerminalGatewayApi(unittest.TestCase):
     """CreditCardTerminalGatewayApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.credit_card_terminal__gateway_api.CreditCardTerminalGatewayApi()  # noqa: E501
+        self.api = office_guy_api.api.credit_card_terminal__gateway_api.CreditCardTerminalGatewayApi()  # noqa: E501
 
     def tearDown(self):
         pass

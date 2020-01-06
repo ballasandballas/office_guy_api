@@ -108,9 +108,9 @@ class ResponseAccountingDocumentsCreateResponse(object):
         # Note: Fixed error in API, approved by Effi Teva
         # allowed_values = ["Success", "BusinessError", "TechnicalError"]  # noqa: E501
         value_map = {
-            0: "Success",
-            1: "BusinessError",
-            2: "TechnicalError"
+            '0': "Success",
+            '1': "BusinessError",
+            '2': "TechnicalError"
         }
         allowed_values = list(value_map.keys())
         if status not in allowed_values:

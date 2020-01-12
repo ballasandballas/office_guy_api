@@ -219,7 +219,12 @@ class RESTClientObject(object):
             # In the python 3, the response.data is bytes.
             # we need to decode it to string.
             if six.PY3:
-                r.data = r.data.decode('utf8')
+                try:
+                    r.data = r.data.decode('utf8')
+                except UnicodeDecodeError:
+                    # Might encounter errors due to responses that aren't string-based (for example, content of binary
+                    # files returned as response)
+                    pass
 
             # log response body
             logger.debug("response body: %s", r.data)

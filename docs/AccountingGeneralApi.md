@@ -1,4 +1,4 @@
-# swagger_client.AccountingGeneralApi
+# office_guy_api.AccountingGeneralApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -10,9 +10,8 @@ Method | HTTP request | Description
 [**accounting_general_update_settings**](AccountingGeneralApi.md#accounting_general_update_settings) | **POST** /api/accounting/general/updatesettings/ | Update accounting application settings
 [**accounting_general_verify_bank_account**](AccountingGeneralApi.md#accounting_general_verify_bank_account) | **POST** /api/accounting/general/verifybankaccount/ | Verify bank account details
 
-
 # **accounting_general_get_exchange_rate**
-> ResponseAccountingGeneralGetExchangeRateResponse accounting_general_get_exchange_rate(request=request, content_language=content_language)
+> ResponseAccountingGeneralGetExchangeRateResponse accounting_general_get_exchange_rate(body=body, content_language=content_language)
 
 Get foreign currency exchange rate
 
@@ -26,12 +25,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingGeneralApi()
-request = office_guy_api.AccountingGeneralGetExchangeRateRequest() # AccountingGeneralGetExchangeRateRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body44() # Body44 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get foreign currency exchange rate
-    api_response = api_instance.accounting_general_get_exchange_rate(request=request, content_language=content_language)
+    api_response = api_instance.accounting_general_get_exchange_rate(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingGeneralApi->accounting_general_get_exchange_rate: %s\n" % e)
@@ -41,8 +40,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingGeneralGetExchangeRateRequest**](AccountingGeneralGetExchangeRateRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body44**](Body44.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -60,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_general_get_vat_rate**
-> ResponseAccountingGeneralGetVATRateResponse accounting_general_get_vat_rate(request=request, content_language=content_language)
+> ResponseAccountingGeneralGetVATRateResponse accounting_general_get_vat_rate(body=body, content_language=content_language)
 
 Get VAT rate by date
 
@@ -74,12 +73,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingGeneralApi()
-request = office_guy_api.AccountingGeneralGetVATRateRequest() # AccountingGeneralGetVATRateRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body40() # Body40 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get VAT rate by date
-    api_response = api_instance.accounting_general_get_vat_rate(request=request, content_language=content_language)
+    api_response = api_instance.accounting_general_get_vat_rate(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingGeneralApi->accounting_general_get_vat_rate: %s\n" % e)
@@ -89,8 +88,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingGeneralGetVATRateRequest**](AccountingGeneralGetVATRateRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body40**](Body40.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -108,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_general_set_next_document_number**
-> ResponseAccountingGeneralSetNextDocumentNumberResponse accounting_general_set_next_document_number(request=request, content_language=content_language)
+> ResponseAccountingGeneralSetNextDocumentNumberResponse accounting_general_set_next_document_number(body=body, content_language=content_language)
 
 Sets the next document number for a document type.
 
@@ -122,12 +121,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingGeneralApi()
-request = office_guy_api.AccountingGeneralSetNextDocumentNumberRequest() # AccountingGeneralSetNextDocumentNumberRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body52() # Body52 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Sets the next document number for a document type.
-    api_response = api_instance.accounting_general_set_next_document_number(request=request, content_language=content_language)
+    api_response = api_instance.accounting_general_set_next_document_number(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingGeneralApi->accounting_general_set_next_document_number: %s\n" % e)
@@ -137,8 +136,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingGeneralSetNextDocumentNumberRequest**](AccountingGeneralSetNextDocumentNumberRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body52**](Body52.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -156,7 +155,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_general_update_settings**
-> ResponseAccountingGeneralUpdateSettingsResponse accounting_general_update_settings(request=request, content_language=content_language)
+> ResponseAccountingGeneralUpdateSettingsResponse accounting_general_update_settings(body=body, content_language=content_language)
 
 Update accounting application settings
 
@@ -170,12 +169,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingGeneralApi()
-request = office_guy_api.AccountingGeneralUpdateSettingsRequest() # AccountingGeneralUpdateSettingsRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body48() # Body48 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Update accounting application settings
-    api_response = api_instance.accounting_general_update_settings(request=request, content_language=content_language)
+    api_response = api_instance.accounting_general_update_settings(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingGeneralApi->accounting_general_update_settings: %s\n" % e)
@@ -185,8 +184,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingGeneralUpdateSettingsRequest**](AccountingGeneralUpdateSettingsRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body48**](Body48.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -204,7 +203,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_general_verify_bank_account**
-> ResponseAccountingGeneralVerifyBankAccountResponse accounting_general_verify_bank_account(request=request, content_language=content_language)
+> ResponseAccountingGeneralVerifyBankAccountResponse accounting_general_verify_bank_account(body=body, content_language=content_language)
 
 Verify bank account details
 
@@ -218,12 +217,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingGeneralApi()
-request = office_guy_api.AccountingGeneralVerifyBankAccountRequest() # AccountingGeneralVerifyBankAccountRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body36() # Body36 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Verify bank account details
-    api_response = api_instance.accounting_general_verify_bank_account(request=request, content_language=content_language)
+    api_response = api_instance.accounting_general_verify_bank_account(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingGeneralApi->accounting_general_verify_bank_account: %s\n" % e)
@@ -233,8 +232,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingGeneralVerifyBankAccountRequest**](AccountingGeneralVerifyBankAccountRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body36**](Body36.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

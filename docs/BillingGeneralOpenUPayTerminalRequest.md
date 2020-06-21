@@ -11,8 +11,7 @@ Name | Type | Description | Notes
 **enable_american_express_diners** | **bool** | Enable support for American Express and Diners credit cards | [optional] 
 **enable_billing** | **bool** | Enable support for recurring payments (request CVV exempt) | [optional] 
 **email_address** | **str** | Opened account email address.&lt;div&gt;&lt;i&gt;Leave empty for auto generated email address&lt;/i&gt;&lt;/div&gt; | [optional] 
-**credentials** | [**CoreAPICredentials**](CoreAPICredentials.md) | Company API credentials | 
+**credentials** | [**AllOfBillingGeneralOpenUPayTerminalRequestCredentials**](AllOfBillingGeneralOpenUPayTerminalRequestCredentials.md) | Company API credentials | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

@@ -10,9 +10,8 @@ Name | Type | Description | Notes
 **customer_id** | **int** |  | [optional] 
 **customer_email_address** | **str** |  | [optional] 
 **customer_name** | **str** |  | [optional] 
-**attachments** | [**list[MicrosoftAspNetCoreHttpIFormFile]**](MicrosoftAspNetCoreHttpIFormFile.md) |  | [optional] 
-**credentials** | [**CoreAPICredentials**](CoreAPICredentials.md) | Company API credentials | 
+**attachments** | **list[str]** |  | [optional] 
+**credentials** | [**AllOfCustomerServiceTicketsCreateRequestCredentials**](AllOfCustomerServiceTicketsCreateRequestCredentials.md) | Company API credentials | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

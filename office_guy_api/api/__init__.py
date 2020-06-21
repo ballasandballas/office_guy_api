@@ -24,6 +24,7 @@ from office_guy_api.api.payments__payments_api import PaymentsPaymentsApi
 from office_guy_api.api.payments__recurring_api import PaymentsRecurringApi
 from office_guy_api.api.sms_subscriptions__mailing_lists_api import SMSSubscriptionsMailingListsApi
 from office_guy_api.api.sms_subscriptions__sms_api import SMSSubscriptionsSMSApi
+from office_guy_api.api.stock_management__stock_api import StockManagementStockApi
 from office_guy_api.api.triggers__triggers_api import TriggersTriggersApi
 from office_guy_api.api.website__companies_api import WebsiteCompaniesApi
 from office_guy_api.api.website__permissions_api import WebsitePermissionsApi

@@ -1,4 +1,4 @@
-# swagger_client.AccountingDocumentsApi
+# office_guy_api.AccountingDocumentsApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -12,9 +12,8 @@ Method | HTTP request | Description
 [**accounting_documents_move_to_books**](AccountingDocumentsApi.md#accounting_documents_move_to_books) | **POST** /api/accounting/documents/movetobooks/ | Move document to books (Finalize a draft document).
 [**accounting_documents_send**](AccountingDocumentsApi.md#accounting_documents_send) | **POST** /api/accounting/documents/send/ | Send document by email
 
-
 # **accounting_documents_add_expense**
-> ResponseAccountingDocumentsAddExpenseResponse accounting_documents_add_expense(request=request, content_language=content_language)
+> ResponseAccountingDocumentsAddExpenseResponse accounting_documents_add_expense(body=body, content_language=content_language)
 
 Add expense
 
@@ -28,12 +27,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingDocumentsApi()
-request = office_guy_api.AccountingDocumentsAddExpenseRequest() # AccountingDocumentsAddExpenseRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body24() # Body24 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Add expense
-    api_response = api_instance.accounting_documents_add_expense(request=request, content_language=content_language)
+    api_response = api_instance.accounting_documents_add_expense(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingDocumentsApi->accounting_documents_add_expense: %s\n" % e)
@@ -43,8 +42,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingDocumentsAddExpenseRequest**](AccountingDocumentsAddExpenseRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body24**](Body24.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -62,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_documents_cancel**
-> ResponseAccountingDocumentsCancelResponse accounting_documents_cancel(request=request, content_language=content_language)
+> ResponseAccountingDocumentsCancelResponse accounting_documents_cancel(body=body, content_language=content_language)
 
 Cancel document (Also known as storno).
 
@@ -78,12 +77,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingDocumentsApi()
-request = office_guy_api.AccountingDocumentsCancelRequest() # AccountingDocumentsCancelRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body28() # Body28 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Cancel document (Also known as storno).
-    api_response = api_instance.accounting_documents_cancel(request=request, content_language=content_language)
+    api_response = api_instance.accounting_documents_cancel(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingDocumentsApi->accounting_documents_cancel: %s\n" % e)
@@ -93,8 +92,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingDocumentsCancelRequest**](AccountingDocumentsCancelRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body28**](Body28.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -112,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_documents_create**
-> ResponseAccountingDocumentsCreateResponse accounting_documents_create(request=request, content_language=content_language)
+> ResponseAccountingDocumentsCreateResponse accounting_documents_create(body=body, content_language=content_language)
 
 Create document
 
@@ -128,12 +127,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingDocumentsApi()
-request = office_guy_api.AccountingDocumentsCreateRequest() # AccountingDocumentsCreateRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body20() # Body20 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Create document
-    api_response = api_instance.accounting_documents_create(request=request, content_language=content_language)
+    api_response = api_instance.accounting_documents_create(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingDocumentsApi->accounting_documents_create: %s\n" % e)
@@ -143,8 +142,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingDocumentsCreateRequest**](AccountingDocumentsCreateRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body20**](Body20.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -162,7 +161,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_documents_get_details**
-> ResponseAccountingDocumentsGetDetailsResponse accounting_documents_get_details(request=request, content_language=content_language)
+> ResponseAccountingDocumentsGetDetailsResponse accounting_documents_get_details(body=body, content_language=content_language)
 
 Get document details
 
@@ -178,12 +177,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingDocumentsApi()
-request = office_guy_api.AccountingDocumentsGetDetailsRequest() # AccountingDocumentsGetDetailsRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body16() # Body16 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get document details
-    api_response = api_instance.accounting_documents_get_details(request=request, content_language=content_language)
+    api_response = api_instance.accounting_documents_get_details(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingDocumentsApi->accounting_documents_get_details: %s\n" % e)
@@ -193,8 +192,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingDocumentsGetDetailsRequest**](AccountingDocumentsGetDetailsRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body16**](Body16.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -212,7 +211,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_documents_get_pdf**
-> accounting_documents_get_pdf(request=request, content_language=content_language)
+> accounting_documents_get_pdf(body=body, content_language=content_language)
 
 Get document PDF
 
@@ -228,12 +227,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingDocumentsApi()
-request = office_guy_api.AccountingDocumentsGetPDFRequest() # AccountingDocumentsGetPDFRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body12() # Body12 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get document PDF
-    api_instance.accounting_documents_get_pdf(request=request, content_language=content_language)
+    api_instance.accounting_documents_get_pdf(body=body, content_language=content_language)
 except ApiException as e:
     print("Exception when calling AccountingDocumentsApi->accounting_documents_get_pdf: %s\n" % e)
 ```
@@ -242,8 +241,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingDocumentsGetPDFRequest**](AccountingDocumentsGetPDFRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body12**](Body12.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -261,7 +260,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_documents_move_to_books**
-> ResponseAccountingDocumentsMoveToBooksResponse accounting_documents_move_to_books(request=request, content_language=content_language)
+> ResponseAccountingDocumentsMoveToBooksResponse accounting_documents_move_to_books(body=body, content_language=content_language)
 
 Move document to books (Finalize a draft document).
 
@@ -275,12 +274,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingDocumentsApi()
-request = office_guy_api.AccountingDocumentsMoveToBooksRequest() # AccountingDocumentsMoveToBooksRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body32() # Body32 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Move document to books (Finalize a draft document).
-    api_response = api_instance.accounting_documents_move_to_books(request=request, content_language=content_language)
+    api_response = api_instance.accounting_documents_move_to_books(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingDocumentsApi->accounting_documents_move_to_books: %s\n" % e)
@@ -290,8 +289,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingDocumentsMoveToBooksRequest**](AccountingDocumentsMoveToBooksRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body32**](Body32.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -309,7 +308,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **accounting_documents_send**
-> CoreAPIEmptyResponse accounting_documents_send(request=request, content_language=content_language)
+> CoreAPIEmptyResponse accounting_documents_send(body=body, content_language=content_language)
 
 Send document by email
 
@@ -325,12 +324,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingDocumentsApi()
-request = office_guy_api.AccountingDocumentsSendRequest() # AccountingDocumentsSendRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body8() # Body8 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Send document by email
-    api_response = api_instance.accounting_documents_send(request=request, content_language=content_language)
+    api_response = api_instance.accounting_documents_send(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingDocumentsApi->accounting_documents_send: %s\n" % e)
@@ -340,8 +339,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingDocumentsSendRequest**](AccountingDocumentsSendRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body8**](Body8.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

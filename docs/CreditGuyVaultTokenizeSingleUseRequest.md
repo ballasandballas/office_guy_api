@@ -8,8 +8,7 @@ Name | Type | Description | Notes
 **expiration_year** | **int** | Card expiration year (4 digits). | 
 **cvv** | **str** | Card CVV/CVV2. | [optional] 
 **citizen_id** | **str** | Israel Citizen ID / Passport Number. | [optional] 
-**credentials** | [**CoreAPIPublicCredentials**](CoreAPIPublicCredentials.md) | Company API public credentials | 
+**credentials** | [**AllOfCreditGuyVaultTokenizeSingleUseRequestCredentials**](AllOfCreditGuyVaultTokenizeSingleUseRequestCredentials.md) | Company API public credentials | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

@@ -1,4 +1,4 @@
-# swagger_client.CreditCardTerminalBillingApi
+# office_guy_api.CreditCardTerminalBillingApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -8,9 +8,8 @@ Method | HTTP request | Description
 [**credit_guy_billing_load**](CreditCardTerminalBillingApi.md#credit_guy_billing_load) | **POST** /api/creditguy/billing/load/ | Load billing transactions
 [**credit_guy_billing_process**](CreditCardTerminalBillingApi.md#credit_guy_billing_process) | **POST** /api/creditguy/billing/process/ | Process loaded billing transactions.
 
-
 # **credit_guy_billing_get_status**
-> ResponseCreditGuyBillingGetStatusResponse credit_guy_billing_get_status(request=request, content_language=content_language)
+> ResponseCreditGuyBillingGetStatusResponse credit_guy_billing_get_status(body=body, content_language=content_language)
 
 Get billing process status
 
@@ -24,12 +23,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CreditCardTerminalBillingApi()
-request = office_guy_api.CreditGuyBillingGetStatusRequest() # CreditGuyBillingGetStatusRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body68() # Body68 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get billing process status
-    api_response = api_instance.credit_guy_billing_get_status(request=request, content_language=content_language)
+    api_response = api_instance.credit_guy_billing_get_status(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CreditCardTerminalBillingApi->credit_guy_billing_get_status: %s\n" % e)
@@ -39,8 +38,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CreditGuyBillingGetStatusRequest**](CreditGuyBillingGetStatusRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body68**](Body68.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -58,7 +57,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **credit_guy_billing_load**
-> ResponseCreditGuyBillingLoadResponse credit_guy_billing_load(request=request, content_language=content_language)
+> ResponseCreditGuyBillingLoadResponse credit_guy_billing_load(body=body, content_language=content_language)
 
 Load billing transactions
 
@@ -72,12 +71,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CreditCardTerminalBillingApi()
-request = office_guy_api.CreditGuyBillingLoadRequest() # CreditGuyBillingLoadRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body60() # Body60 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Load billing transactions
-    api_response = api_instance.credit_guy_billing_load(request=request, content_language=content_language)
+    api_response = api_instance.credit_guy_billing_load(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CreditCardTerminalBillingApi->credit_guy_billing_load: %s\n" % e)
@@ -87,8 +86,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CreditGuyBillingLoadRequest**](CreditGuyBillingLoadRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body60**](Body60.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -106,7 +105,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **credit_guy_billing_process**
-> ResponseCreditGuyBillingProcessResponse credit_guy_billing_process(request=request, content_language=content_language)
+> ResponseCreditGuyBillingProcessResponse credit_guy_billing_process(body=body, content_language=content_language)
 
 Process loaded billing transactions.
 
@@ -122,12 +121,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CreditCardTerminalBillingApi()
-request = office_guy_api.CreditGuyBillingProcessRequest() # CreditGuyBillingProcessRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body64() # Body64 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Process loaded billing transactions.
-    api_response = api_instance.credit_guy_billing_process(request=request, content_language=content_language)
+    api_response = api_instance.credit_guy_billing_process(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CreditCardTerminalBillingApi->credit_guy_billing_process: %s\n" % e)
@@ -137,8 +136,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CreditGuyBillingProcessRequest**](CreditGuyBillingProcessRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body64**](Body64.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

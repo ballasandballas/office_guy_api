@@ -1,4 +1,4 @@
-# swagger_client.OutgoingFaxesFaxApi
+# office_guy_api.OutgoingFaxesFaxApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -6,9 +6,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**fax_fax_send**](OutgoingFaxesFaxApi.md#fax_fax_send) | **POST** /api/fax/fax/send/ | 
 
-
 # **fax_fax_send**
-> ResponseFaxFaxSendResponse fax_fax_send(request=request, content_language=content_language)
+> ResponseFaxFaxSendResponse fax_fax_send(body=body, content_language=content_language)
 
 
 
@@ -22,11 +21,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.OutgoingFaxesFaxApi()
-request = office_guy_api.FaxFaxSendRequest() # FaxFaxSendRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body169() # Body169 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
-    api_response = api_instance.fax_fax_send(request=request, content_language=content_language)
+    api_response = api_instance.fax_fax_send(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling OutgoingFaxesFaxApi->fax_fax_send: %s\n" % e)
@@ -36,8 +35,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**FaxFaxSendRequest**](FaxFaxSendRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body169**](Body169.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

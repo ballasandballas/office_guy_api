@@ -1,4 +1,4 @@
-# swagger_client.PaymentsPaymentsApi
+# office_guy_api.PaymentsPaymentsApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -9,9 +9,8 @@ Method | HTTP request | Description
 [**billing_payments_get**](PaymentsPaymentsApi.md#billing_payments_get) | **POST** /api/billing/payments/get/ | Get payment details
 [**billing_payments_list**](PaymentsPaymentsApi.md#billing_payments_list) | **POST** /api/billing/payments/list/ | List payments
 
-
 # **billing_payments_begin_redirect**
-> ResponseBillingPaymentsBeginRedirectResponse billing_payments_begin_redirect(request=request, content_language=content_language)
+> ResponseBillingPaymentsBeginRedirectResponse billing_payments_begin_redirect(body=body, content_language=content_language)
 
 Begin redirect for transaction
 
@@ -25,12 +24,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsPaymentsApi()
-request = office_guy_api.BillingPaymentsBeginRedirectRequest() # BillingPaymentsBeginRedirectRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body205() # Body205 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Begin redirect for transaction
-    api_response = api_instance.billing_payments_begin_redirect(request=request, content_language=content_language)
+    api_response = api_instance.billing_payments_begin_redirect(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsPaymentsApi->billing_payments_begin_redirect: %s\n" % e)
@@ -40,8 +39,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingPaymentsBeginRedirectRequest**](BillingPaymentsBeginRedirectRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body205**](Body205.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -59,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_payments_charge**
-> ResponseBillingPaymentsChargeResponse billing_payments_charge(request=request, content_language=content_language)
+> ResponseBillingPaymentsChargeResponse billing_payments_charge(body=body, content_language=content_language)
 
 Charge customer
 
@@ -73,12 +72,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsPaymentsApi()
-request = office_guy_api.BillingPaymentsChargeRequest() # BillingPaymentsChargeRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body193() # Body193 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Charge customer
-    api_response = api_instance.billing_payments_charge(request=request, content_language=content_language)
+    api_response = api_instance.billing_payments_charge(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsPaymentsApi->billing_payments_charge: %s\n" % e)
@@ -88,8 +87,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingPaymentsChargeRequest**](BillingPaymentsChargeRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body193**](Body193.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -107,7 +106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_payments_get**
-> ResponseBillingPaymentsGetResponse billing_payments_get(request=request, content_language=content_language)
+> ResponseBillingPaymentsGetResponse billing_payments_get(body=body, content_language=content_language)
 
 Get payment details
 
@@ -123,12 +122,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsPaymentsApi()
-request = office_guy_api.BillingPaymentsGetRequest() # BillingPaymentsGetRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body197() # Body197 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get payment details
-    api_response = api_instance.billing_payments_get(request=request, content_language=content_language)
+    api_response = api_instance.billing_payments_get(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsPaymentsApi->billing_payments_get: %s\n" % e)
@@ -138,8 +137,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingPaymentsGetRequest**](BillingPaymentsGetRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body197**](Body197.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -157,7 +156,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_payments_list**
-> ResponseBillingPaymentsListResponse billing_payments_list(request=request, content_language=content_language)
+> ResponseBillingPaymentsListResponse billing_payments_list(body=body, content_language=content_language)
 
 List payments
 
@@ -171,12 +170,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsPaymentsApi()
-request = office_guy_api.BillingPaymentsListRequest() # BillingPaymentsListRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body201() # Body201 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # List payments
-    api_response = api_instance.billing_payments_list(request=request, content_language=content_language)
+    api_response = api_instance.billing_payments_list(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsPaymentsApi->billing_payments_list: %s\n" % e)
@@ -186,8 +185,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingPaymentsListRequest**](BillingPaymentsListRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body201**](Body201.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

@@ -1,4 +1,4 @@
-# swagger_client.CustomerServiceTicketsApi
+# office_guy_api.CustomerServiceTicketsApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -6,9 +6,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**customer_service_tickets_create**](CustomerServiceTicketsApi.md#customer_service_tickets_create) | **POST** /api/customerservice/tickets/create/ | 
 
-
 # **customer_service_tickets_create**
-> ResponseCustomerServiceTicketsCreateResponse customer_service_tickets_create(request=request, content_language=content_language)
+> ResponseCustomerServiceTicketsCreateResponse customer_service_tickets_create(body=body, content_language=content_language)
 
 
 
@@ -22,11 +21,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CustomerServiceTicketsApi()
-request = office_guy_api.CustomerServiceTicketsCreateRequest() # CustomerServiceTicketsCreateRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body145() # Body145 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
-    api_response = api_instance.customer_service_tickets_create(request=request, content_language=content_language)
+    api_response = api_instance.customer_service_tickets_create(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CustomerServiceTicketsApi->customer_service_tickets_create: %s\n" % e)
@@ -36,8 +35,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CustomerServiceTicketsCreateRequest**](CustomerServiceTicketsCreateRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body145**](Body145.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

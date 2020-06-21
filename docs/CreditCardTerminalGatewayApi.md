@@ -1,4 +1,4 @@
-# swagger_client.CreditCardTerminalGatewayApi
+# office_guy_api.CreditCardTerminalGatewayApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -9,9 +9,8 @@ Method | HTTP request | Description
 [**credit_guy_gateway_get_transaction**](CreditCardTerminalGatewayApi.md#credit_guy_gateway_get_transaction) | **POST** /api/creditguy/gateway/gettransaction/ | Get existing transaction details
 [**credit_guy_gateway_transaction**](CreditCardTerminalGatewayApi.md#credit_guy_gateway_transaction) | **POST** /api/creditguy/gateway/transaction/ | Credit card transaction
 
-
 # **credit_guy_gateway_begin_redirect**
-> ResponseCreditGuyGatewayBeginRedirectResponse credit_guy_gateway_begin_redirect(request=request, content_language=content_language)
+> ResponseCreditGuyGatewayBeginRedirectResponse credit_guy_gateway_begin_redirect(body=body, content_language=content_language)
 
 Begin redirect for transaction
 
@@ -25,12 +24,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CreditCardTerminalGatewayApi()
-request = office_guy_api.CreditGuyGatewayBeginRedirectRequest() # CreditGuyGatewayBeginRedirectRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body80() # Body80 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Begin redirect for transaction
-    api_response = api_instance.credit_guy_gateway_begin_redirect(request=request, content_language=content_language)
+    api_response = api_instance.credit_guy_gateway_begin_redirect(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CreditCardTerminalGatewayApi->credit_guy_gateway_begin_redirect: %s\n" % e)
@@ -40,8 +39,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CreditGuyGatewayBeginRedirectRequest**](CreditGuyGatewayBeginRedirectRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body80**](Body80.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -59,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **credit_guy_gateway_get_reference_numbers**
-> ResponseCreditGuyGatewayGetReferenceNumbersResponse credit_guy_gateway_get_reference_numbers(request=request, content_language=content_language)
+> ResponseCreditGuyGatewayGetReferenceNumbersResponse credit_guy_gateway_get_reference_numbers(body=body, content_language=content_language)
 
 Get reference numbers for existing transactions
 
@@ -73,12 +72,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CreditCardTerminalGatewayApi()
-request = office_guy_api.CreditGuyGatewayGetReferenceNumbersRequest() # CreditGuyGatewayGetReferenceNumbersRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body84() # Body84 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get reference numbers for existing transactions
-    api_response = api_instance.credit_guy_gateway_get_reference_numbers(request=request, content_language=content_language)
+    api_response = api_instance.credit_guy_gateway_get_reference_numbers(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CreditCardTerminalGatewayApi->credit_guy_gateway_get_reference_numbers: %s\n" % e)
@@ -88,8 +87,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CreditGuyGatewayGetReferenceNumbersRequest**](CreditGuyGatewayGetReferenceNumbersRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body84**](Body84.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -107,7 +106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **credit_guy_gateway_get_transaction**
-> ResponseCreditGuyGatewayGetTransactionResponse credit_guy_gateway_get_transaction(request=request, content_language=content_language)
+> ResponseCreditGuyGatewayGetTransactionResponse credit_guy_gateway_get_transaction(body=body, content_language=content_language)
 
 Get existing transaction details
 
@@ -121,12 +120,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CreditCardTerminalGatewayApi()
-request = office_guy_api.CreditGuyGatewayGetTransactionRequest() # CreditGuyGatewayGetTransactionRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body76() # Body76 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get existing transaction details
-    api_response = api_instance.credit_guy_gateway_get_transaction(request=request, content_language=content_language)
+    api_response = api_instance.credit_guy_gateway_get_transaction(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CreditCardTerminalGatewayApi->credit_guy_gateway_get_transaction: %s\n" % e)
@@ -136,8 +135,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CreditGuyGatewayGetTransactionRequest**](CreditGuyGatewayGetTransactionRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body76**](Body76.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -155,11 +154,11 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **credit_guy_gateway_transaction**
-> ResponseCreditGuyGatewayTransactionResponse credit_guy_gateway_transaction(request=request, content_language=content_language)
+> ResponseCreditGuyGatewayTransactionResponse credit_guy_gateway_transaction(body=body, content_language=content_language)
 
 Credit card transaction
 
-This method should be used in rare occasions.  For common use scenarios, refer to \"Payments -&gt; Charge customer\" method.
+This method should be used in rare occasions.  For common use scenarios, refer to \"Payments -> Charge customer\" method.
 
 ### Example
 ```python
@@ -171,12 +170,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CreditCardTerminalGatewayApi()
-request = office_guy_api.CreditGuyGatewayTransactionRequest() # CreditGuyGatewayTransactionRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body72() # Body72 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Credit card transaction
-    api_response = api_instance.credit_guy_gateway_transaction(request=request, content_language=content_language)
+    api_response = api_instance.credit_guy_gateway_transaction(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CreditCardTerminalGatewayApi->credit_guy_gateway_transaction: %s\n" % e)
@@ -186,8 +185,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CreditGuyGatewayTransactionRequest**](CreditGuyGatewayTransactionRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body72**](Body72.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

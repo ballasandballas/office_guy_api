@@ -1,4 +1,4 @@
-# swagger_client.HashExportExportApi
+# office_guy_api.HashExportExportApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -6,9 +6,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**accounting_hash_export_export_send**](HashExportExportApi.md#accounting_hash_export_export_send) | **POST** /api/accountinghashexport/export/send/ | Sends hash export by mail
 
-
 # **accounting_hash_export_export_send**
-> ResponseAccountingHashExportExportSendResponse accounting_hash_export_export_send(request=request, content_language=content_language)
+> ResponseAccountingHashExportExportSendResponse accounting_hash_export_export_send(body=body, content_language=content_language)
 
 Sends hash export by mail
 
@@ -22,12 +21,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.HashExportExportApi()
-request = office_guy_api.AccountingHashExportExportSendRequest() # AccountingHashExportExportSendRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body157() # Body157 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Sends hash export by mail
-    api_response = api_instance.accounting_hash_export_export_send(request=request, content_language=content_language)
+    api_response = api_instance.accounting_hash_export_export_send(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling HashExportExportApi->accounting_hash_export_export_send: %s\n" % e)
@@ -37,8 +36,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingHashExportExportSendRequest**](AccountingHashExportExportSendRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body157**](Body157.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

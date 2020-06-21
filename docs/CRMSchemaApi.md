@@ -1,4 +1,4 @@
-# swagger_client.CRMSchemaApi
+# office_guy_api.CRMSchemaApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -7,9 +7,8 @@ Method | HTTP request | Description
 [**c_rm_schema_get_folder**](CRMSchemaApi.md#c_rm_schema_get_folder) | **POST** /api/crm/schema/getfolder/ | Get folder details
 [**c_rm_schema_list_folders**](CRMSchemaApi.md#c_rm_schema_list_folders) | **POST** /api/crm/schema/listfolders/ | List folders
 
-
 # **c_rm_schema_get_folder**
-> ResponseCRMSchemaGetFolderResponse c_rm_schema_get_folder(request=request, content_language=content_language)
+> ResponseCRMSchemaGetFolderResponse c_rm_schema_get_folder(body=body, content_language=content_language)
 
 Get folder details
 
@@ -23,12 +22,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMSchemaApi()
-request = office_guy_api.CRMSchemaGetFolderRequest() # CRMSchemaGetFolderRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body133() # Body133 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get folder details
-    api_response = api_instance.c_rm_schema_get_folder(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_schema_get_folder(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMSchemaApi->c_rm_schema_get_folder: %s\n" % e)
@@ -38,8 +37,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMSchemaGetFolderRequest**](CRMSchemaGetFolderRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body133**](Body133.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -57,7 +56,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_schema_list_folders**
-> ResponseCRMSchemaListFoldersResponse c_rm_schema_list_folders(request=request, content_language=content_language)
+> ResponseCRMSchemaListFoldersResponse c_rm_schema_list_folders(body=body, content_language=content_language)
 
 List folders
 
@@ -71,12 +70,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMSchemaApi()
-request = office_guy_api.CRMSchemaListFoldersRequest() # CRMSchemaListFoldersRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body137() # Body137 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # List folders
-    api_response = api_instance.c_rm_schema_list_folders(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_schema_list_folders(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMSchemaApi->c_rm_schema_list_folders: %s\n" % e)
@@ -86,8 +85,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMSchemaListFoldersRequest**](CRMSchemaListFoldersRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body137**](Body137.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

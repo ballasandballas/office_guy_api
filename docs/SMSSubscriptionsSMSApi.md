@@ -1,4 +1,4 @@
-# swagger_client.SMSSubscriptionsSMSApi
+# office_guy_api.SMSSubscriptionsSMSApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -8,9 +8,8 @@ Method | HTTP request | Description
 [**s_mssms_send**](SMSSubscriptionsSMSApi.md#s_mssms_send) | **POST** /api/sms/sms/send/ | Sends a single SMS message
 [**s_mssms_send_multiple**](SMSSubscriptionsSMSApi.md#s_mssms_send_multiple) | **POST** /api/sms/sms/sendmultiple/ | Sends multiple SMS messages
 
-
 # **s_mssms_list_senders**
-> ResponseSMSSMSListSendersResponse s_mssms_list_senders(request=request, content_language=content_language)
+> ResponseSMSSMSListSendersResponse s_mssms_list_senders(body=body, content_language=content_language)
 
 List verified sender numbers
 
@@ -24,12 +23,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.SMSSubscriptionsSMSApi()
-request = office_guy_api.SMSSMSListSendersRequest() # SMSSMSListSendersRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body245() # Body245 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # List verified sender numbers
-    api_response = api_instance.s_mssms_list_senders(request=request, content_language=content_language)
+    api_response = api_instance.s_mssms_list_senders(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SMSSubscriptionsSMSApi->s_mssms_list_senders: %s\n" % e)
@@ -39,8 +38,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SMSSMSListSendersRequest**](SMSSMSListSendersRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body245**](Body245.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -58,7 +57,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **s_mssms_send**
-> ResponseSMSSMSSendResponse s_mssms_send(request=request, content_language=content_language)
+> ResponseSMSSMSSendResponse s_mssms_send(body=body, content_language=content_language)
 
 Sends a single SMS message
 
@@ -74,12 +73,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.SMSSubscriptionsSMSApi()
-request = office_guy_api.SMSSMSSendRequest() # SMSSMSSendRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body237() # Body237 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Sends a single SMS message
-    api_response = api_instance.s_mssms_send(request=request, content_language=content_language)
+    api_response = api_instance.s_mssms_send(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SMSSubscriptionsSMSApi->s_mssms_send: %s\n" % e)
@@ -89,8 +88,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SMSSMSSendRequest**](SMSSMSSendRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body237**](Body237.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -108,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **s_mssms_send_multiple**
-> ResponseSMSSMSSendMultipleResponse s_mssms_send_multiple(request=request, content_language=content_language)
+> ResponseSMSSMSSendMultipleResponse s_mssms_send_multiple(body=body, content_language=content_language)
 
 Sends multiple SMS messages
 
@@ -122,12 +121,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.SMSSubscriptionsSMSApi()
-request = office_guy_api.SMSSMSSendMultipleRequest() # SMSSMSSendMultipleRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body241() # Body241 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Sends multiple SMS messages
-    api_response = api_instance.s_mssms_send_multiple(request=request, content_language=content_language)
+    api_response = api_instance.s_mssms_send_multiple(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SMSSubscriptionsSMSApi->s_mssms_send_multiple: %s\n" % e)
@@ -137,8 +136,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SMSSMSSendMultipleRequest**](SMSSMSSendMultipleRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body241**](Body241.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

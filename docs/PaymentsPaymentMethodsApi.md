@@ -1,4 +1,4 @@
-# swagger_client.PaymentsPaymentMethodsApi
+# office_guy_api.PaymentsPaymentMethodsApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -8,9 +8,8 @@ Method | HTTP request | Description
 [**billing_payment_methods_remove**](PaymentsPaymentMethodsApi.md#billing_payment_methods_remove) | **POST** /api/billing/paymentmethods/remove/ | Remove payment details from existing customer
 [**billing_payment_methods_set_for_customer**](PaymentsPaymentMethodsApi.md#billing_payment_methods_set_for_customer) | **POST** /api/billing/paymentmethods/setforcustomer/ | Set payment details
 
-
 # **billing_payment_methods_get_for_customer**
-> ResponseBillingPaymentMethodsGetForCustomerResponse billing_payment_methods_get_for_customer(request=request, content_language=content_language)
+> ResponseBillingPaymentMethodsGetForCustomerResponse billing_payment_methods_get_for_customer(body=body, content_language=content_language)
 
 Get payment details
 
@@ -24,12 +23,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsPaymentMethodsApi()
-request = office_guy_api.BillingPaymentMethodsGetForCustomerRequest() # BillingPaymentMethodsGetForCustomerRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body181() # Body181 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get payment details
-    api_response = api_instance.billing_payment_methods_get_for_customer(request=request, content_language=content_language)
+    api_response = api_instance.billing_payment_methods_get_for_customer(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsPaymentMethodsApi->billing_payment_methods_get_for_customer: %s\n" % e)
@@ -39,8 +38,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingPaymentMethodsGetForCustomerRequest**](BillingPaymentMethodsGetForCustomerRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body181**](Body181.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -58,7 +57,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_payment_methods_remove**
-> ResponseBillingPaymentMethodsRemoveResponse billing_payment_methods_remove(request=request, content_language=content_language)
+> ResponseBillingPaymentMethodsRemoveResponse billing_payment_methods_remove(body=body, content_language=content_language)
 
 Remove payment details from existing customer
 
@@ -72,12 +71,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsPaymentMethodsApi()
-request = office_guy_api.BillingPaymentMethodsRemoveRequest() # BillingPaymentMethodsRemoveRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body189() # Body189 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Remove payment details from existing customer
-    api_response = api_instance.billing_payment_methods_remove(request=request, content_language=content_language)
+    api_response = api_instance.billing_payment_methods_remove(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsPaymentMethodsApi->billing_payment_methods_remove: %s\n" % e)
@@ -87,8 +86,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingPaymentMethodsRemoveRequest**](BillingPaymentMethodsRemoveRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body189**](Body189.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -106,7 +105,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_payment_methods_set_for_customer**
-> ResponseBillingPaymentMethodsSetForCustomerResponse billing_payment_methods_set_for_customer(request=request, content_language=content_language)
+> ResponseBillingPaymentMethodsSetForCustomerResponse billing_payment_methods_set_for_customer(body=body, content_language=content_language)
 
 Set payment details
 
@@ -120,12 +119,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsPaymentMethodsApi()
-request = office_guy_api.BillingPaymentMethodsSetForCustomerRequest() # BillingPaymentMethodsSetForCustomerRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body185() # Body185 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Set payment details
-    api_response = api_instance.billing_payment_methods_set_for_customer(request=request, content_language=content_language)
+    api_response = api_instance.billing_payment_methods_set_for_customer(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsPaymentMethodsApi->billing_payment_methods_set_for_customer: %s\n" % e)
@@ -135,8 +134,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingPaymentMethodsSetForCustomerRequest**](BillingPaymentMethodsSetForCustomerRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body185**](Body185.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

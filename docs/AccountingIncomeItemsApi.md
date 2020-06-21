@@ -1,15 +1,13 @@
-# swagger_client.AccountingIncomeItemsApi
+# office_guy_api.AccountingIncomeItemsApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**accounting_income_items_create**](AccountingIncomeItemsApi.md#accounting_income_items_create) | **POST** /api/accounting/incomeitems/create/ | Create income item
-[**accounting_income_items_list_stock**](AccountingIncomeItemsApi.md#accounting_income_items_list_stock) | **POST** /api/accounting/incomeitems/liststock/ | List stock
-
 
 # **accounting_income_items_create**
-> ResponseAccountingIncomeItemsCreateResponse accounting_income_items_create(request=request, content_language=content_language)
+> ResponseAccountingIncomeItemsCreateResponse accounting_income_items_create(body=body, content_language=content_language)
 
 Create income item
 
@@ -23,12 +21,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.AccountingIncomeItemsApi()
-request = office_guy_api.AccountingIncomeItemsCreateRequest() # AccountingIncomeItemsCreateRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body56() # Body56 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Create income item
-    api_response = api_instance.accounting_income_items_create(request=request, content_language=content_language)
+    api_response = api_instance.accounting_income_items_create(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AccountingIncomeItemsApi->accounting_income_items_create: %s\n" % e)
@@ -38,60 +36,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AccountingIncomeItemsCreateRequest**](AccountingIncomeItemsCreateRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body56**](Body56.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
 [**ResponseAccountingIncomeItemsCreateResponse**](ResponseAccountingIncomeItemsCreateResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json-patch+json, application/json, text/json, application/*+json
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **accounting_income_items_list_stock**
-> ResponseAccountingIncomeItemsListStockResponse accounting_income_items_list_stock(request=request, content_language=content_language)
-
-List stock
-
-### Example
-```python
-from __future__ import print_function
-import time
-import office_guy_api
-from office_guy_api.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = office_guy_api.AccountingIncomeItemsApi()
-request = office_guy_api.AccountingIncomeItemsListStockRequest() # AccountingIncomeItemsListStockRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
-
-try:
-    # List stock
-    api_response = api_instance.accounting_income_items_list_stock(request=request, content_language=content_language)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling AccountingIncomeItemsApi->accounting_income_items_list_stock: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AccountingIncomeItemsListStockRequest**](AccountingIncomeItemsListStockRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
-
-### Return type
-
-[**ResponseAccountingIncomeItemsListStockResponse**](ResponseAccountingIncomeItemsListStockResponse.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# swagger_client.PaymentsRecurringApi
+# office_guy_api.PaymentsRecurringApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -10,9 +10,8 @@ Method | HTTP request | Description
 [**billing_recurring_update**](PaymentsRecurringApi.md#billing_recurring_update) | **POST** /api/billing/recurring/update/ | Update customer recurring item
 [**billing_recurring_update_settings**](PaymentsRecurringApi.md#billing_recurring_update_settings) | **POST** /api/billing/recurring/updatesettings/ | Update recurring billing application settings
 
-
 # **billing_recurring_cancel**
-> ResponseBillingRecurringCancelResponse billing_recurring_cancel(request=request, content_language=content_language)
+> ResponseBillingRecurringCancelResponse billing_recurring_cancel(body=body, content_language=content_language)
 
 Cancel customer item
 
@@ -26,12 +25,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsRecurringApi()
-request = office_guy_api.BillingRecurringCancelRequest() # BillingRecurringCancelRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body213() # Body213 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Cancel customer item
-    api_response = api_instance.billing_recurring_cancel(request=request, content_language=content_language)
+    api_response = api_instance.billing_recurring_cancel(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsRecurringApi->billing_recurring_cancel: %s\n" % e)
@@ -41,8 +40,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingRecurringCancelRequest**](BillingRecurringCancelRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body213**](Body213.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -60,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_recurring_charge**
-> ResponseBillingRecurringChargeResponse billing_recurring_charge(request=request, content_language=content_language)
+> ResponseBillingRecurringChargeResponse billing_recurring_charge(body=body, content_language=content_language)
 
 Charge customer and create recurring payment
 
@@ -74,12 +73,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsRecurringApi()
-request = office_guy_api.BillingRecurringChargeRequest() # BillingRecurringChargeRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body217() # Body217 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Charge customer and create recurring payment
-    api_response = api_instance.billing_recurring_charge(request=request, content_language=content_language)
+    api_response = api_instance.billing_recurring_charge(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsRecurringApi->billing_recurring_charge: %s\n" % e)
@@ -89,8 +88,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingRecurringChargeRequest**](BillingRecurringChargeRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body217**](Body217.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -108,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_recurring_list_for_customer**
-> ResponseBillingRecurringListForCustomerResponse billing_recurring_list_for_customer(request=request, content_language=content_language)
+> ResponseBillingRecurringListForCustomerResponse billing_recurring_list_for_customer(body=body, content_language=content_language)
 
 List customer recurring items
 
@@ -122,12 +121,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsRecurringApi()
-request = office_guy_api.BillingRecurringListForCustomerRequest() # BillingRecurringListForCustomerRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body209() # Body209 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # List customer recurring items
-    api_response = api_instance.billing_recurring_list_for_customer(request=request, content_language=content_language)
+    api_response = api_instance.billing_recurring_list_for_customer(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsRecurringApi->billing_recurring_list_for_customer: %s\n" % e)
@@ -137,8 +136,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingRecurringListForCustomerRequest**](BillingRecurringListForCustomerRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body209**](Body209.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -156,7 +155,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_recurring_update**
-> ResponseBillingRecurringUpdateResponse billing_recurring_update(request=request, content_language=content_language)
+> ResponseBillingRecurringUpdateResponse billing_recurring_update(body=body, content_language=content_language)
 
 Update customer recurring item
 
@@ -170,12 +169,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsRecurringApi()
-request = office_guy_api.BillingRecurringUpdateRequest() # BillingRecurringUpdateRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body221() # Body221 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Update customer recurring item
-    api_response = api_instance.billing_recurring_update(request=request, content_language=content_language)
+    api_response = api_instance.billing_recurring_update(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsRecurringApi->billing_recurring_update: %s\n" % e)
@@ -185,8 +184,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingRecurringUpdateRequest**](BillingRecurringUpdateRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body221**](Body221.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -204,7 +203,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **billing_recurring_update_settings**
-> ResponseBillingRecurringUpdateSettingsResponse billing_recurring_update_settings(request=request, content_language=content_language)
+> ResponseBillingRecurringUpdateSettingsResponse billing_recurring_update_settings(body=body, content_language=content_language)
 
 Update recurring billing application settings
 
@@ -218,12 +217,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.PaymentsRecurringApi()
-request = office_guy_api.BillingRecurringUpdateSettingsRequest() # BillingRecurringUpdateSettingsRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body225() # Body225 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Update recurring billing application settings
-    api_response = api_instance.billing_recurring_update_settings(request=request, content_language=content_language)
+    api_response = api_instance.billing_recurring_update_settings(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PaymentsRecurringApi->billing_recurring_update_settings: %s\n" % e)
@@ -233,8 +232,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**BillingRecurringUpdateSettingsRequest**](BillingRecurringUpdateSettingsRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body225**](Body225.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

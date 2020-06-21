@@ -9,11 +9,10 @@ Name | Type | Description | Notes
 **automatic_billing_documents_only** | **bool** | Automatic billing mode for documents only | [optional] 
 **automatic_billing_proforma_invoices** | **bool** | Automatic billing mode for charging existing proforma invoices | [optional] 
 **automatic_billing_payment_requests** | **bool** | Automatic billing mode for charging existing payment requests | [optional] 
-**automatic_billing_tax_invoices** | **bool** | Automatic billing mode charging existing tax invoices | [optional] 
-**automatic_billing_charge_document** | **str** | Default document type for charges billing | [optional] 
-**automatic_billing_documents_only_document** | **str** | Default document type for documents only billing | [optional] 
-**credentials** | [**CoreAPICredentials**](CoreAPICredentials.md) | Company API credentials | 
+**automatic_billing_invoices** | **bool** | Automatic billing mode charging existing tax invoices | [optional] 
+**automatic_billing_charge_document** | [**AllOfBillingRecurringUpdateSettingsRequestAutomaticBillingChargeDocument**](AllOfBillingRecurringUpdateSettingsRequestAutomaticBillingChargeDocument.md) | Default document type for charges billing | [optional] 
+**automatic_billing_documents_only_document** | [**AllOfBillingRecurringUpdateSettingsRequestAutomaticBillingDocumentsOnlyDocument**](AllOfBillingRecurringUpdateSettingsRequestAutomaticBillingDocumentsOnlyDocument.md) | Default document type for documents only billing | [optional] 
+**credentials** | [**AllOfBillingRecurringUpdateSettingsRequestCredentials**](AllOfBillingRecurringUpdateSettingsRequestCredentials.md) | Company API credentials | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

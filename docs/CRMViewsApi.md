@@ -1,4 +1,4 @@
-# swagger_client.CRMViewsApi
+# office_guy_api.CRMViewsApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -6,9 +6,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**c_rm_views_list_views**](CRMViewsApi.md#c_rm_views_list_views) | **POST** /api/crm/views/listviews/ | List views
 
-
 # **c_rm_views_list_views**
-> ResponseCRMViewsListViewsResponse c_rm_views_list_views(request=request, content_language=content_language)
+> ResponseCRMViewsListViewsResponse c_rm_views_list_views(body=body, content_language=content_language)
 
 List views
 
@@ -22,12 +21,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMViewsApi()
-request = office_guy_api.CRMViewsListViewsRequest() # CRMViewsListViewsRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body141() # Body141 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # List views
-    api_response = api_instance.c_rm_views_list_views(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_views_list_views(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMViewsApi->c_rm_views_list_views: %s\n" % e)
@@ -37,8 +36,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMViewsListViewsRequest**](CRMViewsListViewsRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body141**](Body141.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

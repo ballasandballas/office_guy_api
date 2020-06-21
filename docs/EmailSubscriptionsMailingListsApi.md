@@ -1,4 +1,4 @@
-# swagger_client.EmailSubscriptionsMailingListsApi
+# office_guy_api.EmailSubscriptionsMailingListsApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -7,9 +7,8 @@ Method | HTTP request | Description
 [**email_subscriptions_mailing_lists_add**](EmailSubscriptionsMailingListsApi.md#email_subscriptions_mailing_lists_add) | **POST** /api/emailsubscriptions/mailinglists/add/ | 
 [**email_subscriptions_mailing_lists_list**](EmailSubscriptionsMailingListsApi.md#email_subscriptions_mailing_lists_list) | **POST** /api/emailsubscriptions/mailinglists/list/ | 
 
-
 # **email_subscriptions_mailing_lists_add**
-> ResponseEmailSubscriptionsMailingListsAddResponse email_subscriptions_mailing_lists_add(request=request, content_language=content_language)
+> ResponseEmailSubscriptionsMailingListsAddResponse email_subscriptions_mailing_lists_add(body=body, content_language=content_language)
 
 
 
@@ -23,11 +22,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.EmailSubscriptionsMailingListsApi()
-request = office_guy_api.EmailSubscriptionsMailingListsAddRequest() # EmailSubscriptionsMailingListsAddRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body153() # Body153 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
-    api_response = api_instance.email_subscriptions_mailing_lists_add(request=request, content_language=content_language)
+    api_response = api_instance.email_subscriptions_mailing_lists_add(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EmailSubscriptionsMailingListsApi->email_subscriptions_mailing_lists_add: %s\n" % e)
@@ -37,8 +36,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**EmailSubscriptionsMailingListsAddRequest**](EmailSubscriptionsMailingListsAddRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body153**](Body153.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -56,7 +55,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **email_subscriptions_mailing_lists_list**
-> ResponseEmailSubscriptionsMailingListsListResponse email_subscriptions_mailing_lists_list(request=request, content_language=content_language)
+> ResponseEmailSubscriptionsMailingListsListResponse email_subscriptions_mailing_lists_list(body=body, content_language=content_language)
 
 
 
@@ -70,11 +69,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.EmailSubscriptionsMailingListsApi()
-request = office_guy_api.EmailSubscriptionsMailingListsListRequest() # EmailSubscriptionsMailingListsListRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body149() # Body149 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
-    api_response = api_instance.email_subscriptions_mailing_lists_list(request=request, content_language=content_language)
+    api_response = api_instance.email_subscriptions_mailing_lists_list(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EmailSubscriptionsMailingListsApi->email_subscriptions_mailing_lists_list: %s\n" % e)
@@ -84,8 +83,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**EmailSubscriptionsMailingListsListRequest**](EmailSubscriptionsMailingListsListRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body149**](Body149.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

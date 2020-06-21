@@ -3,9 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**customer** | [**AccountingTypedCustomer**](AccountingTypedCustomer.md) | Customer details | 
-**credentials** | [**CoreAPICredentials**](CoreAPICredentials.md) | Company API credentials | 
+**customer** | [**AllOfBillingPaymentMethodsGetForCustomerRequestCustomer**](AllOfBillingPaymentMethodsGetForCustomerRequestCustomer.md) | Customer details | 
+**credentials** | [**AllOfBillingPaymentMethodsGetForCustomerRequestCredentials**](AllOfBillingPaymentMethodsGetForCustomerRequestCredentials.md) | Company API credentials | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

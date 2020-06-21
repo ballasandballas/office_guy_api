@@ -1,4 +1,4 @@
-# swagger_client.CRMDataApi
+# office_guy_api.CRMDataApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -14,9 +14,8 @@ Method | HTTP request | Description
 [**c_rm_data_list_entities**](CRMDataApi.md#c_rm_data_list_entities) | **POST** /api/crm/data/listentities/ | List entities
 [**c_rm_data_update_entity**](CRMDataApi.md#c_rm_data_update_entity) | **POST** /api/crm/data/updateentity/ | Update entity
 
-
 # **c_rm_data_archive_entity**
-> CoreAPIEmptyResponse c_rm_data_archive_entity(request=request, content_language=content_language)
+> CoreAPIEmptyResponse c_rm_data_archive_entity(body=body, content_language=content_language)
 
 Archive entity
 
@@ -30,12 +29,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataArchiveEntityRequest() # CRMDataArchiveEntityRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body105() # Body105 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Archive entity
-    api_response = api_instance.c_rm_data_archive_entity(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_data_archive_entity(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_archive_entity: %s\n" % e)
@@ -45,8 +44,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataArchiveEntityRequest**](CRMDataArchiveEntityRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body105**](Body105.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -64,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_data_count_entity_usage**
-> ResponseSystemInt64 c_rm_data_count_entity_usage(request=request, content_language=content_language)
+> ResponseSystemInt64 c_rm_data_count_entity_usage(body=body, content_language=content_language)
 
 Count entity usage
 
@@ -78,12 +77,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataCountEntityUsageRequest() # CRMDataCountEntityUsageRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body121() # Body121 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Count entity usage
-    api_response = api_instance.c_rm_data_count_entity_usage(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_data_count_entity_usage(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_count_entity_usage: %s\n" % e)
@@ -93,8 +92,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataCountEntityUsageRequest**](CRMDataCountEntityUsageRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body121**](Body121.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -112,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_data_create_entity**
-> ResponseCRMDataCreateEntityResponse c_rm_data_create_entity(request=request, content_language=content_language)
+> ResponseCRMDataCreateEntityResponse c_rm_data_create_entity(body=body, content_language=content_language)
 
 Create entity
 
@@ -126,12 +125,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataCreateEntityRequest() # CRMDataCreateEntityRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body97() # Body97 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Create entity
-    api_response = api_instance.c_rm_data_create_entity(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_data_create_entity(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_create_entity: %s\n" % e)
@@ -141,8 +140,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataCreateEntityRequest**](CRMDataCreateEntityRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body97**](Body97.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -160,7 +159,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_data_delete_entity**
-> CoreAPIEmptyResponse c_rm_data_delete_entity(request=request, content_language=content_language)
+> CoreAPIEmptyResponse c_rm_data_delete_entity(body=body, content_language=content_language)
 
 Delete entity
 
@@ -174,12 +173,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataDeleteEntityRequest() # CRMDataDeleteEntityRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body109() # Body109 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Delete entity
-    api_response = api_instance.c_rm_data_delete_entity(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_data_delete_entity(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_delete_entity: %s\n" % e)
@@ -189,8 +188,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataDeleteEntityRequest**](CRMDataDeleteEntityRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body109**](Body109.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -208,7 +207,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_data_get_entities_html**
-> c_rm_data_get_entities_html(request=request, content_language=content_language)
+> c_rm_data_get_entities_html(body=body, content_language=content_language)
 
 Get entities HTML contents for print
 
@@ -222,12 +221,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataGetEntitiesHTMLRequest() # CRMDataGetEntitiesHTMLRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body129() # Body129 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get entities HTML contents for print
-    api_instance.c_rm_data_get_entities_html(request=request, content_language=content_language)
+    api_instance.c_rm_data_get_entities_html(body=body, content_language=content_language)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_get_entities_html: %s\n" % e)
 ```
@@ -236,8 +235,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataGetEntitiesHTMLRequest**](CRMDataGetEntitiesHTMLRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body129**](Body129.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -255,7 +254,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_data_get_entity**
-> ResponseCRMDataGetEntityResponse c_rm_data_get_entity(request=request, content_language=content_language)
+> ResponseCRMDataGetEntityResponse c_rm_data_get_entity(body=body, content_language=content_language)
 
 Get entity
 
@@ -269,12 +268,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataGetEntityRequest() # CRMDataGetEntityRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body117() # Body117 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get entity
-    api_response = api_instance.c_rm_data_get_entity(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_data_get_entity(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_get_entity: %s\n" % e)
@@ -284,8 +283,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataGetEntityRequest**](CRMDataGetEntityRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body117**](Body117.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -303,7 +302,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_data_get_entity_print_html**
-> c_rm_data_get_entity_print_html(request=request, content_language=content_language)
+> c_rm_data_get_entity_print_html(body=body, content_language=content_language)
 
 Get entity HTML contents for print
 
@@ -317,12 +316,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataGetEntityPrintHTMLRequest() # CRMDataGetEntityPrintHTMLRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body125() # Body125 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Get entity HTML contents for print
-    api_instance.c_rm_data_get_entity_print_html(request=request, content_language=content_language)
+    api_instance.c_rm_data_get_entity_print_html(body=body, content_language=content_language)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_get_entity_print_html: %s\n" % e)
 ```
@@ -331,8 +330,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataGetEntityPrintHTMLRequest**](CRMDataGetEntityPrintHTMLRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body125**](Body125.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -350,7 +349,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_data_list_entities**
-> ResponseCRMDataListEntitiesResponse c_rm_data_list_entities(request=request, content_language=content_language)
+> ResponseCRMDataListEntitiesResponse c_rm_data_list_entities(body=body, content_language=content_language)
 
 List entities
 
@@ -364,12 +363,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataListEntitiesRequest() # CRMDataListEntitiesRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body113() # Body113 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # List entities
-    api_response = api_instance.c_rm_data_list_entities(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_data_list_entities(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_list_entities: %s\n" % e)
@@ -379,8 +378,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataListEntitiesRequest**](CRMDataListEntitiesRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body113**](Body113.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -398,7 +397,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **c_rm_data_update_entity**
-> ResponseCRMDataUpdateEntityResponse c_rm_data_update_entity(request=request, content_language=content_language)
+> ResponseCRMDataUpdateEntityResponse c_rm_data_update_entity(body=body, content_language=content_language)
 
 Update entity
 
@@ -412,12 +411,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.CRMDataApi()
-request = office_guy_api.CRMDataUpdateEntityRequest() # CRMDataUpdateEntityRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body101() # Body101 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Update entity
-    api_response = api_instance.c_rm_data_update_entity(request=request, content_language=content_language)
+    api_response = api_instance.c_rm_data_update_entity(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CRMDataApi->c_rm_data_update_entity: %s\n" % e)
@@ -427,8 +426,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CRMDataUpdateEntityRequest**](CRMDataUpdateEntityRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body101**](Body101.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

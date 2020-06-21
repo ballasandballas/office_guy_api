@@ -1,4 +1,4 @@
-# swagger_client.TriggersTriggersApi
+# office_guy_api.TriggersTriggersApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -7,9 +7,8 @@ Method | HTTP request | Description
 [**triggers_triggers_subscribe**](TriggersTriggersApi.md#triggers_triggers_subscribe) | **POST** /api/triggers/triggers/subscribe/ | Subscribe a trigger
 [**triggers_triggers_unsubscribe**](TriggersTriggersApi.md#triggers_triggers_unsubscribe) | **POST** /api/triggers/triggers/unsubscribe/ | Unsubscribe a trigger
 
-
 # **triggers_triggers_subscribe**
-> ResponseTriggersTriggersSubscribeResponse triggers_triggers_subscribe(request=request, content_language=content_language)
+> ResponseTriggersTriggersSubscribeResponse triggers_triggers_subscribe(body=body, content_language=content_language)
 
 Subscribe a trigger
 
@@ -23,12 +22,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.TriggersTriggersApi()
-request = office_guy_api.TriggersTriggersSubscribeRequest() # TriggersTriggersSubscribeRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body253() # Body253 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Subscribe a trigger
-    api_response = api_instance.triggers_triggers_subscribe(request=request, content_language=content_language)
+    api_response = api_instance.triggers_triggers_subscribe(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TriggersTriggersApi->triggers_triggers_subscribe: %s\n" % e)
@@ -38,8 +37,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TriggersTriggersSubscribeRequest**](TriggersTriggersSubscribeRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body253**](Body253.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -57,7 +56,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **triggers_triggers_unsubscribe**
-> ResponseTriggersTriggersUnsubscribeResponse triggers_triggers_unsubscribe(request=request, content_language=content_language)
+> ResponseTriggersTriggersUnsubscribeResponse triggers_triggers_unsubscribe(body=body, content_language=content_language)
 
 Unsubscribe a trigger
 
@@ -71,12 +70,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.TriggersTriggersApi()
-request = office_guy_api.TriggersTriggersUnsubscribeRequest() # TriggersTriggersUnsubscribeRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body257() # Body257 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Unsubscribe a trigger
-    api_response = api_instance.triggers_triggers_unsubscribe(request=request, content_language=content_language)
+    api_response = api_instance.triggers_triggers_unsubscribe(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TriggersTriggersApi->triggers_triggers_unsubscribe: %s\n" % e)
@@ -86,8 +85,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TriggersTriggersUnsubscribeRequest**](TriggersTriggersUnsubscribeRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body257**](Body257.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

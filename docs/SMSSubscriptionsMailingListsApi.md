@@ -1,4 +1,4 @@
-# swagger_client.SMSSubscriptionsMailingListsApi
+# office_guy_api.SMSSubscriptionsMailingListsApi
 
 All URIs are relative to *https://www.myofficeguy.com*
 
@@ -7,9 +7,8 @@ Method | HTTP request | Description
 [**s_ms_mailing_lists_add**](SMSSubscriptionsMailingListsApi.md#s_ms_mailing_lists_add) | **POST** /api/sms/mailinglists/add/ | Add recipient to a mailing list
 [**s_ms_mailing_lists_list**](SMSSubscriptionsMailingListsApi.md#s_ms_mailing_lists_list) | **POST** /api/sms/mailinglists/list/ | List mailing lists
 
-
 # **s_ms_mailing_lists_add**
-> ResponseSMSMailingListsAddResponse s_ms_mailing_lists_add(request=request, content_language=content_language)
+> ResponseSMSMailingListsAddResponse s_ms_mailing_lists_add(body=body, content_language=content_language)
 
 Add recipient to a mailing list
 
@@ -23,12 +22,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.SMSSubscriptionsMailingListsApi()
-request = office_guy_api.SMSMailingListsAddRequest() # SMSMailingListsAddRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body233() # Body233 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # Add recipient to a mailing list
-    api_response = api_instance.s_ms_mailing_lists_add(request=request, content_language=content_language)
+    api_response = api_instance.s_ms_mailing_lists_add(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SMSSubscriptionsMailingListsApi->s_ms_mailing_lists_add: %s\n" % e)
@@ -38,8 +37,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SMSMailingListsAddRequest**](SMSMailingListsAddRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body233**](Body233.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 
@@ -57,7 +56,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **s_ms_mailing_lists_list**
-> ResponseSMSMailingListListResponse s_ms_mailing_lists_list(request=request, content_language=content_language)
+> ResponseSMSMailingListListResponse s_ms_mailing_lists_list(body=body, content_language=content_language)
 
 List mailing lists
 
@@ -71,12 +70,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = office_guy_api.SMSSubscriptionsMailingListsApi()
-request = office_guy_api.SMSMailingListsListRequest() # SMSMailingListsListRequest |  (optional)
-content_language = 'content_language_example' # str | Sets the content response language. Defaults to Hebrew (he). (optional)
+body = office_guy_api.Body229() # Body229 |  (optional)
+content_language = office_guy_api.ContentLanguage() # ContentLanguage | Sets the content response language. Defaults to Hebrew (he). (optional)
 
 try:
     # List mailing lists
-    api_response = api_instance.s_ms_mailing_lists_list(request=request, content_language=content_language)
+    api_response = api_instance.s_ms_mailing_lists_list(body=body, content_language=content_language)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SMSSubscriptionsMailingListsApi->s_ms_mailing_lists_list: %s\n" % e)
@@ -86,8 +85,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SMSMailingListsListRequest**](SMSMailingListsListRequest.md)|  | [optional] 
- **content_language** | **str**| Sets the content response language. Defaults to Hebrew (he). | [optional] 
+ **body** | [**Body229**](Body229.md)|  | [optional] 
+ **content_language** | [**ContentLanguage**](.md)| Sets the content response language. Defaults to Hebrew (he). | [optional] 
 
 ### Return type
 

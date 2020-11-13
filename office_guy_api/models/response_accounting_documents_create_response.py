@@ -105,21 +105,18 @@ class ResponseAccountingDocumentsCreateResponse(object):
         :param status: The status of this ResponseAccountingDocumentsCreateResponse.  # noqa: E501
         :type: str
         """
-        # Note: Fixed error in API, approved by Effi Teva
-        # allowed_values = ["Success", "BusinessError", "TechnicalError"]  # noqa: E501
-        value_map = {
-            '0': "Success",
-            '1': "BusinessError",
-            '2': "TechnicalError"
-        }
-        allowed_values = list(value_map.keys())
+        allowed_values = ["Success", "BusinessError", "TechnicalError"]  # noqa: E501
+        # MANUAL FIX
+        if status.isnumeric():
+            status = allowed_values[int(status)]
+        # END MANUAL FIX
         if status not in allowed_values:
             raise ValueError(
                 "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
                 .format(status, allowed_values)
             )
 
-        self._status = value_map.get(status)
+        self._status = status
 
     @property
     def user_error_message(self):

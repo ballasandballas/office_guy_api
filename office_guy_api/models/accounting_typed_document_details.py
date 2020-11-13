@@ -195,6 +195,10 @@ class AccountingTypedDocumentDetails(object):
         :type: str
         """
         allowed_values = ["Hebrew", "English", "Arabic", "Spanish"]  # noqa: E501
+        # MANUAL FIX
+        if language.isnumeric():
+            language = allowed_values[int(language)]
+        # END MANUAL FIX
         if language not in allowed_values:
             raise ValueError(
                 "Invalid value for `language` ({0}), must be one of {1}"  # noqa: E501
@@ -224,6 +228,10 @@ class AccountingTypedDocumentDetails(object):
         :type: str
         """
         allowed_values = ["ILS", "USD", "EUR", "CAD", "CHF", "GBP", "AUD"]  # noqa: E501
+        # MANUAL FIX
+        if currency.isnumeric():
+            currency = allowed_values[int(currency)]
+        # END MANUAL FIX
         if currency not in allowed_values:
             raise ValueError(
                 "Invalid value for `currency` ({0}), must be one of {1}"  # noqa: E501
@@ -255,6 +263,10 @@ class AccountingTypedDocumentDetails(object):
         if type is None:
             raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
         allowed_values = ["Invoice", "InvoiceAndReceipt", "Receipt", "ProformaInvoice", "DonationReceipt", "CreditInvoice", "CreditInvoiceAndReceipt", "CreditReceipt", "Order", "DeliveryNote", "GoodsReturnNote", "PurchasingOrder", "PriceQuotation", "PaymentRequest", "CreditDonationReceipt"]  # noqa: E501
+        # MANUAL FIX
+        if type.isnumeric():
+            type = allowed_values[int(type)]
+        # END MANUAL FIX
         if type not in allowed_values:
             raise ValueError(
                 "Invalid value for `type` ({0}), must be one of {1}"  # noqa: E501

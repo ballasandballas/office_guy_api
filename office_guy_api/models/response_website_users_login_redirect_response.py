@@ -105,7 +105,7 @@ class ResponseWebsiteUsersLoginRedirectResponse(object):
         :param status: The status of this ResponseWebsiteUsersLoginRedirectResponse.  # noqa: E501
         :type: str
         """
-        allowed_values = ["Success", "BusinessError", "TechnicalError"]  # noqa: E501
+        allowed_values = ["Success", "BusinessError", "TechnicalError", "0", "1"]  # noqa: E501
         if status not in allowed_values:
             raise ValueError(
                 "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501

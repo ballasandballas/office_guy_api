@@ -106,6 +106,10 @@ class ResponseWebsiteCompaniesUpdateResponse(object):
         :type: str
         """
         allowed_values = ["Success", "BusinessError", "TechnicalError"]  # noqa: E501
+        # MANUAL FIX
+        if status.isnumeric():
+            status = allowed_values[int(status)]
+        # END MANUAL FIX
         if status not in allowed_values:
             raise ValueError(
                 "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501

@@ -47,7 +47,7 @@ class WebsiteTypedCompany(object):
         'english_title': 'str',
         'company_type': 'str',
         'logo': 'str',
-        'website': 'str'
+        'website': 'int'
     }
 
     attribute_map = {
@@ -470,6 +470,10 @@ class WebsiteTypedCompany(object):
         :type: str
         """
         allowed_values = ["CompanyWithVAT", "VATExemptDealer", "LicensedDealer", "Fellowship", "Partnership", "CommunityInterestCompany", "Cooperative", "HouseCommittee", "ElectionGroup", "Party"]  # noqa: E501
+        # MANUAL FIX
+        if company_type.isnumeric():
+            company_type = allowed_values[int(company_type)]
+        # END MANUAL FIX
         if company_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `company_type` ({0}), must be one of {1}"  # noqa: E501

@@ -227,7 +227,9 @@ class AccountingTypedDocumentDetails(object):
         :param currency: The currency of this AccountingTypedDocumentDetails.  # noqa: E501
         :type: str
         """
-        allowed_values = ["ILS", "USD", "EUR", "CAD", "CHF", "GBP", "AUD"]  # noqa: E501
+        # allowed_values = ["ILS", "USD", "EUR", "CAD", "CHF", "GBP", "AUD"]  # noqa: E501
+        allowed_values = ["ILS", "USD", "EUR", "CAD", "CHF", "GBP", "AUD", "PLN"]  # noqa: E501
+        # END MANUAL FIX
         # MANUAL FIX
         if currency.isnumeric():
             currency = allowed_values[int(currency)]

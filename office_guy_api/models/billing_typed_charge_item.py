@@ -156,7 +156,9 @@ class BillingTypedChargeItem(object):
         :param currency: The currency of this BillingTypedChargeItem.  # noqa: E501
         :type: str
         """
-        allowed_values = ["ILS", "USD", "EUR", "CAD", "CHF", "GBP", "AUD"]  # noqa: E501
+        # allowed_values = ["ILS", "USD", "EUR", "CAD", "CHF", "GBP", "AUD"]  # noqa: E501
+        allowed_values = ["ILS", "USD", "EUR", "CAD", "CHF", "GBP", "AUD", "PLN"]  # noqa: E501
+        # END MANUAL FIX
         if currency not in allowed_values:
             raise ValueError(
                 "Invalid value for `currency` ({0}), must be one of {1}"  # noqa: E501
